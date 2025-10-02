@@ -1,4 +1,5 @@
 import { getDictionary } from "./dictionaries";
+import Banner from "../../components/Banner";
 
 export async function generateMetadata({
   params,
@@ -25,9 +26,8 @@ export default async function Page({
   const dict = await getDictionary(lang as "it" | "ro", "home");
 
   return (
-    <main>
-      <h1>{dict.hero.title}</h1>
-      <p>{dict.hero.description}</p>
+    <main className="py-8">
+      <Banner title={dict.hero.title} description={dict.hero.description} />
     </main>
   );
 }
