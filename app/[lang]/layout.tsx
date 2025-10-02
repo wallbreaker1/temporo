@@ -11,11 +11,11 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }): Promise<React.ReactNode> {
-  const lang = params.lang as "it" | "ro";
-  const navDict = await getDictionary(lang, "nav");
-  const footerDict = await getDictionary(lang, "footer");
+  const { lang } = await params;
+  const navDict = await getDictionary(lang as "it" | "ro", "nav");
+  const footerDict = await getDictionary(lang as "it" | "ro", "footer");
 
   return (
     <html lang={lang}>
