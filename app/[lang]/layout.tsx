@@ -1,6 +1,7 @@
 import { getDictionary } from "./dictionaries";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import "../globals.css";
 
 export async function generateStaticParams() {
   return [{ lang: "it" }, { lang: "ro" }];
@@ -20,9 +21,11 @@ export default async function LocaleLayout({
   return (
     <html lang={lang}>
       <body>
-        <Nav dict={navDict} />
-        {children}
-        <Footer dict={footerDict} />
+        <div className="max-w-6xl mx-auto px-4">
+          <Nav dict={navDict} />
+          <div className="pt-20">{children}</div>
+          <Footer dict={footerDict} />
+        </div>
       </body>
     </html>
   );
