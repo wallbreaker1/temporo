@@ -3,10 +3,10 @@ import { getDictionary } from "./dictionaries";
 export async function generateMetadata({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }) {
-  const lang = params.lang as "it" | "ro";
-  const dict = await getDictionary(lang, "home");
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "it" | "ro", "home");
   return {
     title: dict.seo?.title || dict.hero.title,
     description: dict.seo?.description || dict.hero.description,
@@ -16,9 +16,13 @@ export async function generateMetadata({
   };
 }
 
-export default async function Page({ params }: { params: { lang: string } }) {
-  const lang = params.lang as "it" | "ro";
-  const dict = await getDictionary(lang, "home");
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang as "it" | "ro", "home");
 
   return (
     <main>
