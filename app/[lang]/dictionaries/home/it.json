@@ -3,6 +3,13 @@
     "title": "Benvenuto su Temporo",
     "description": "Soluzioni digitali semplici e veloci per il tuo progetto."
   },
+  "heroSection": {
+    "title": "Temporo: L'ecosistema rivoluzionario di fidelizzazione 2.0",
+    "subtitle": "Un modo nuovo e semplice per ottenere sconti fino al 90% su prodotti e servizi nell'ecosistema Temporo",
+    "description": "Per le persone e le aziende che vogliono di più.",
+    "imageSrc": "/hero-globe.png",
+    "imageAlt": "Rete Globale Temporo"
+  },
   "seo": {
     "title": "Temporo - Soluzioni digitali veloci",
     "description": "Scopri Temporo, la piattaforma per soluzioni digitali semplici, veloci ed efficienti per il tuo progetto."

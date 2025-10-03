@@ -18,7 +18,7 @@ export default function Sidebar({
 }: SidebarProps) {
   return (
     <div
-      className={`fixed w-full h-full overflow-hidden bg-black left-0 z-10 flex flex-col items-center transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full h-full overflow-hidden bg-black z-30 flex flex-col items-center transition-all duration-300 ${
         isBurgerOpen ? "opacity-100 visible" : "opacity-0 invisible"
       }`}
     >

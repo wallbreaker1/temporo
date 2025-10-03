@@ -1,5 +1,5 @@
 import { getDictionary } from "./dictionaries";
-import Banner from "../../components/Banner";
+import HeroSection from "../../components/HeroSection";
 
 export async function generateMetadata({
   params,
@@ -26,8 +26,14 @@ export default async function Page({
   const dict = await getDictionary(lang as "it" | "ro", "home");
 
   return (
-    <main className="py-8">
-      <Banner title={dict.hero.title} description={dict.hero.description} />
+    <main>
+      <HeroSection
+        title={dict.heroSection.title}
+        subtitle={dict.heroSection.subtitle}
+        description={dict.heroSection.description}
+        imageSrc={dict.heroSection.imageSrc || "/hero-globe.png"}
+        imageAlt={dict.heroSection.imageAlt || "Temporo Global Network"}
+      />
     </main>
   );
 }
