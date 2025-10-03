@@ -3,6 +3,13 @@
     "title": "Bine ai venit pe Temporo",
     "description": "Solutii digitale simple si rapide pentru proiectul tau."
   },
+  "heroSection": {
+    "title": "Temporo: Ecosistemul revoluționar de fidelizare 2.0",
+    "subtitle": "Un mod nou și simplu de a obține discount-uri de până la 90% la produse și servicii în ecosistemul Temporo",
+    "description": "Pentru oamenii și afacerile care vor mai mult.",
+    "imageSrc": "/hero-globe.png",
+    "imageAlt": "Rețeaua Globală Temporo"
+  },
   "seo": {
     "title": "Temporo - Soluții digitale rapide",
     "description": "Descoperă Temporo, platforma pentru soluții digitale simple, rapide și eficiente pentru proiectul tău."

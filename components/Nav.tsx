@@ -46,92 +46,98 @@ export default function Nav({ dict }: NavProps) {
   };
 
   return (
-    <nav
-      className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear ${
-        isScrolled
-          ? "bg-black/90 backdrop-blur-sm shadow-lg rounded-lg"
-          : "bg-transparent"
-      }`}
-      style={{ maxWidth: "1200px", width: "90%" }}
-    >
-      {!isBurgerOpen && (
-        <div className="px-6 py-4 flex items-center justify-between gap-8">
-          {isScrolled && isMobile ? (
-            <Button variant="primary">
-              <Link href={`/${currentLang}/contact`}>{dict.contact || "Contact"}</Link>
-            </Button>
-          ) : (
-            <Link href={`/${currentLang}`} className="flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Temporo Logo"
-                width={120}
-                height={40}
-                priority
-                className="h-10"
-              />
-            </Link>
-          )}
-
-          {!isMobile && (
-            <ul className="flex gap-x-6 list-none m-0 p-0">
-              <li>
-                <Link
-                  href={`/${currentLang}`}
-                  className="text-white hover:text-[#D2A55D] transition-colors font-medium"
-                >
-                  {dict.home || "Acasă"}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${currentLang}/about`}
-                  className="text-white hover:text-[#D2A55D] transition-colors font-medium"
-                >
-                  {dict.about || "Despre"}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${currentLang}/services`}
-                  className="text-white hover:text-[#D2A55D] transition-colors font-medium"
-                >
-                  {dict.services || "Servicii"}
-                </Link>
-              </li>
-            </ul>
-          )}
-
-          {!isMobile && (
-            <div className="flex items-center gap-4">
+    <>
+      <nav
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear ${
+          isScrolled
+            ? "bg-black/90 backdrop-blur-sm shadow-lg rounded-lg"
+            : "bg-transparent"
+        }`}
+        style={{ maxWidth: "1200px", width: "90%" }}
+      >
+        {!isBurgerOpen && (
+          <div className="px-6 py-4 flex items-center justify-between gap-8">
+            {isScrolled && isMobile ? (
               <Button variant="primary">
-                <Link href={`/${currentLang}/contact`}>{dict.contact || "Contact"}</Link>
+                <Link href={`/${currentLang}/contact`}>
+                  {dict.contact || "Contact"}
+                </Link>
               </Button>
-              <LanguageSwitcher currentLang={currentLang} />
-            </div>
-          )}
+            ) : (
+              <Link href={`/${currentLang}`} className="flex items-center">
+                <Image
+                  src="/logo.png"
+                  alt="Temporo Logo"
+                  width={120}
+                  height={40}
+                  priority
+                  className="h-10"
+                />
+              </Link>
+            )}
 
-          {isMobile && (
-            <div className="flex items-center gap-4">
-              <LanguageSwitcher currentLang={currentLang} isMobile={true} />
-              <button
-                className="text-white hover:text-[#D2A55D] transition-colors"
-                onClick={handleBurger}
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
+            {!isMobile && (
+              <ul className="flex gap-x-6 list-none m-0 p-0">
+                <li>
+                  <Link
+                    href={`/${currentLang}`}
+                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                  >
+                    {dict.home || "Acasă"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${currentLang}/about`}
+                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                  >
+                    {dict.about || "Despre"}
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href={`/${currentLang}/services`}
+                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                  >
+                    {dict.services || "Servicii"}
+                  </Link>
+                </li>
+              </ul>
+            )}
+
+            {!isMobile && (
+              <div className="flex items-center gap-4">
+                <Button variant="primary">
+                  <Link href={`/${currentLang}/contact`}>
+                    {dict.contact || "Contact"}
+                  </Link>
+                </Button>
+                <LanguageSwitcher currentLang={currentLang} />
+              </div>
+            )}
+
+            {isMobile && (
+              <div className="flex items-center gap-4">
+                <LanguageSwitcher currentLang={currentLang} isMobile={true} />
+                <button
+                  className="text-white hover:text-[#D2A55D] transition-colors"
+                  onClick={handleBurger}
                 >
-                  <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
-                </svg>
-              </button>
-            </div>
-          )}
-        </div>
-      )}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
+                  </svg>
+                </button>
+              </div>
+            )}
+          </div>
+        )}
+      </nav>
 
       <Sidebar
         isBurgerOpen={isBurgerOpen}
@@ -139,6 +145,6 @@ export default function Nav({ dict }: NavProps) {
         dict={dict}
         currentLang={currentLang}
       />
-    </nav>
+    </>
   );
 }
