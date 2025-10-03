@@ -41,7 +41,7 @@ export default function Sidebar({
       <ul className="pt-24 w-64 text-center list-none space-y-6">
         <li>
           <Link
-            href="/"
+            href={`/${currentLang}`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
@@ -50,7 +50,7 @@ export default function Sidebar({
         </li>
         <li>
           <Link
-            href="/about"
+            href={`/${currentLang}/about`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
@@ -59,7 +59,7 @@ export default function Sidebar({
         </li>
         <li>
           <Link
-            href="/services"
+            href={`/${currentLang}/services`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
@@ -68,7 +68,7 @@ export default function Sidebar({
         </li>
         <li>
           <Link
-            href="/contact"
+            href={`/${currentLang}/contact`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >

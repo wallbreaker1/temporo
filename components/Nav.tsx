@@ -58,10 +58,10 @@ export default function Nav({ dict }: NavProps) {
         <div className="px-6 py-4 flex items-center justify-between gap-8">
           {isScrolled && isMobile ? (
             <Button variant="primary">
-              <Link href="/contact">{dict.contact || "Contact"}</Link>
+              <Link href={`/${currentLang}/contact`}>{dict.contact || "Contact"}</Link>
             </Button>
           ) : (
-            <Link href="/" className="flex items-center">
+            <Link href={`/${currentLang}`} className="flex items-center">
               <Image
                 src="/logo.png"
                 alt="Temporo Logo"
@@ -77,7 +77,7 @@ export default function Nav({ dict }: NavProps) {
             <ul className="flex gap-x-6 list-none m-0 p-0">
               <li>
                 <Link
-                  href="/"
+                  href={`/${currentLang}`}
                   className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                 >
                   {dict.home || "Acasă"}
@@ -85,7 +85,7 @@ export default function Nav({ dict }: NavProps) {
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href={`/${currentLang}/about`}
                   className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                 >
                   {dict.about || "Despre"}
@@ -93,7 +93,7 @@ export default function Nav({ dict }: NavProps) {
               </li>
               <li>
                 <Link
-                  href="/services"
+                  href={`/${currentLang}/services`}
                   className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                 >
                   {dict.services || "Servicii"}
@@ -105,7 +105,7 @@ export default function Nav({ dict }: NavProps) {
           {!isMobile && (
             <div className="flex items-center gap-4">
               <Button variant="primary">
-                <Link href="/contact">{dict.contact || "Contact"}</Link>
+                <Link href={`/${currentLang}/contact`}>{dict.contact || "Contact"}</Link>
               </Button>
               <LanguageSwitcher currentLang={currentLang} />
             </div>
