@@ -48,12 +48,12 @@ export default function Nav({ dict }: NavProps) {
   return (
     <>
       <nav
-        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear ${
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear border-b border-x rounded-b-xl border-[#d2a55d2b] ${
           isScrolled
             ? "bg-black/90 backdrop-blur-sm shadow-lg rounded-lg"
             : "bg-transparent"
         }`}
-        style={{ maxWidth: "1200px", width: "90%" }}
+        style={{ maxWidth: "1200px", width: "100%" }}
       >
         {!isBurgerOpen && (
           <div className="px-6 py-4 flex items-center justify-between gap-8">
