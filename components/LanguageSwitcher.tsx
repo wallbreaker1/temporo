@@ -35,31 +35,25 @@ export default function LanguageSwitcher({
 
   if (isMobile) {
     return (
-      <div className="flex items-center justify-center gap-2 py-2">
+      <Link
+        href={`/${otherLanguage?.code}${pathWithoutLang}`}
+        className="flex items-center justify-center py-2 hover:text-[#D2A55D] transition-colors"
+        title={`Schimbă în ${otherLanguage?.name}`}
+      >
         <span className="text-white text-lg">{currentLanguage?.flag}</span>
-        <span className="text-gray-400">|</span>
-        <Link
-          href={`/${otherLanguage?.code}${pathWithoutLang}`}
-          className="text-white hover:text-[#D2A55D] transition-colors text-lg"
-        >
-          {otherLanguage?.flag}
-        </Link>
-      </div>
+      </Link>
     );
   }
 
   return (
-    <div className="flex items-center gap-2">
-      <span className="text-white text-xl" title={currentLanguage?.name}>
+    <Link
+      href={`/${otherLanguage?.code}${pathWithoutLang}`}
+      className="flex items-center gap-1 hover:text-[#D2A55D] transition-colors group"
+      title={`Schimbă în ${otherLanguage?.name}`}
+    >
+      <span className="text-white text-xl group-hover:scale-110 transition-transform">
         {currentLanguage?.flag}
       </span>
-      <Link
-        href={`/${otherLanguage?.code}${pathWithoutLang}`}
-        className="text-white hover:text-[#D2A55D] transition-colors text-xl opacity-60 hover:opacity-100"
-        title={`Schimbă în ${otherLanguage?.name}`}
-      >
-        {otherLanguage?.flag}
-      </Link>
-    </div>
+    </Link>
   );
 }
