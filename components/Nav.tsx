@@ -48,9 +48,9 @@ export default function Nav({ dict }: NavProps) {
   return (
     <>
       <nav
-        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear border-b border-x rounded-b-xl border-[#d2a55d2b] ${
+        className={`fixed top-0 left-1/2 transform -translate-x-1/2 z-20 transition-all duration-300 ease-linear border-b border-x rounded-b-xl border-[#d2a55d] ${
           isScrolled
-            ? "bg-black/90 backdrop-blur-sm shadow-lg rounded-lg"
+            ? "bg-black/90 backdrop-blur-sm shadow-lg"
             : "bg-transparent"
         }`}
         style={{ maxWidth: "1200px", width: "100%" }}

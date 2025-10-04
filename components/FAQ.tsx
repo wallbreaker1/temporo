@@ -18,7 +18,7 @@ export default function FAQ({ title, faqs }: FAQProps) {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-black">
+    <section className="py-16 lg:py-20 bg-black">
       <div className="container mx-auto px-4 lg:px-6 max-w-4xl">
         {/* Section Title */}
         <div className="text-center mb-16">
@@ -32,7 +32,7 @@ export default function FAQ({ title, faqs }: FAQProps) {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="group border-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden"
+              className="group border-1 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 overflow-hidden"
             >
               {/* Question Button */}
               <button

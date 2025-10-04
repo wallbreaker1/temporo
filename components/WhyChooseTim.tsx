@@ -14,7 +14,7 @@ export default function WhyChooseTim({
   features,
 }: WhyChooseTimProps) {
   return (
-    <section className="py-20 lg:py-32 bg-black">
+    <section className="py-16 lg:py-20 bg-black">
       <div className="text-center mb-16">
         <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white mb-4">
           {title}

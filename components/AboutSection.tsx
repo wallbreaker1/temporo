@@ -29,7 +29,7 @@ export default function AboutSection({
   imageAlt,
 }: AboutSectionProps) {
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
         {/* Text Content */}
         <div className="space-y-8">

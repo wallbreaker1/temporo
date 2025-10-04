@@ -16,7 +16,7 @@ export default function TimPointsInfo({
   whatAreNotPoints,
 }: TimPointsInfoProps) {
   return (
-    <section className="py-20 lg:py-32">
+    <section className="py-16 lg:py-20">
       <div className="text-center mb-16">
         <h2 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white">
           {title}
@@ -25,7 +25,7 @@ export default function TimPointsInfo({
 
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 lg:items-stretch">
         {/* What TIM Points ARE */}
-        <div className="group p-8 lg:p-10 border-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 flex flex-col h-full">
+        <div className="group p-8 lg:p-10 border-2 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 flex flex-col h-full">
           <h3 className="text-2xl lg:text-3xl font-bold text-[#D2A55D] mb-8 text-center group-hover:text-[#E6B96A] transition-colors duration-300">
             {whatArePoints.title}
           </h3>
@@ -57,7 +57,7 @@ export default function TimPointsInfo({
         </div>
 
         {/* What TIM Points are NOT */}
-        <div className="group p-8 lg:p-10 border-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 flex flex-col h-full">
+        <div className="group p-8 lg:p-10 border-2 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl hover:scale-105 transition-all duration-300 flex flex-col h-full">
           <h3 className="text-2xl lg:text-3xl font-bold text-[#D2A55D] mb-8 text-center group-hover:text-[#E6B96A] transition-colors duration-300">
             {whatAreNotPoints.title}
           </h3>
