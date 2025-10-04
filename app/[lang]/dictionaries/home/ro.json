@@ -10,6 +10,137 @@
     "imageSrc": "/hero-globe.png",
     "imageAlt": "Rețeaua Globală Temporo"
   },
+  "aboutSection": {
+    "subtitle": "DESPRE TEMPORO",
+    "title": "Ecosistemul de fidelizare 2.0 simplu, clar și transparent",
+    "description": "Temporo este un ecosistem digital de fidelizare nou, creat pentru a transforma fiecare achiziție într-o oportunitate de economisire.",
+    "timPoints": {
+      "description": "Prin punctele TIM, create de Temporo, obții discount-uri reale la produse și servicii, atât în Magazinul Temporo, cât și la partenerii oficiali."
+    },
+    "timControl": {
+      "description": "Punctele TIM sunt sub controlul tău: se stochează în wallet-ul xPortal și pot fi folosite imediat ce le primești, pot fi transferate sau oferite cadou."
+    },
+    "mission": {
+      "description": "Misiunea noastră este să construim o comunitate vie și transparentă, în care colaborarea este cheia.",
+      "benefits": "Temporo devine puncta dintre membri și parteneri: membrii economisesc prin discount-uri semnificative, iar partenerii oficiali câștigă vizibilitate, creștere și loialitatea clienților lor."
+    },
+    "imageSrc": "/about-saturn.png",
+    "imageAlt": "Ecosistemul Temporo"
+  },
+  "whyChooseTim": {
+    "title": "De ce să alegi TIM",
+    "subtitle": "TIM = PUNCTE DE FIDELIZARE 2.0",
+    "features": [
+      {
+        "icon": "📊",
+        "title": "RECOMPENSE PROGRESIVE",
+        "description": "Mai multe cumpărături, mai multe avantaje reale"
+      },
+      {
+        "icon": "⭐",
+        "title": "BENEFICII EXCLUSIVE",
+        "description": "Acces la reduceri și beneficii rezervate doar membrilor Temporo"
+      },
+      {
+        "icon": "🕐",
+        "title": "FĂRĂ SURPRIZE NEPLĂCUTE",
+        "description": "Discounturi clare și ușor de activat fără complicații"
+      },
+      {
+        "icon": "👥",
+        "title": "COMUNITATE ACTIVĂ",
+        "description": "Fii parte dintr-o comunitate unde TIM activează reduceri reale la produse și servicii."
+      }
+    ]
+  },
+  "timPointsInfo": {
+    "title": "Ce trebuie să știi despre punctele TIM",
+    "whatArePoints": {
+      "title": "Ce SUNT punctele TIM",
+      "points": [
+        "Puncte de fidelizare digitale, parte din ecosistemul Temporo.",
+        "Folosite pentru discount-uri la produse și servicii (Magazinul Temporo și la partenerii oficiali).",
+        "Transferabile: pot fi oferite cadou sau donate.",
+        "Stocate în walletul xPortal, sub controlul exclusiv al utilizatorului.",
+        "Obținute prin pachetele Temporo sau campanii de reward."
+      ]
+    },
+    "whatAreNotPoints": {
+      "title": "Ce NU SUNT punctele TIM",
+      "points": [
+        "Nu sunt bani sau criptomonede cu lichiditate publică.",
+        "Nu sunt vouchere juridice sau fiscale.",
+        "Nu sunt instrumente financiare sau forme de investiții.",
+        "În afara ecosistemului Temporo, nu pot fi folosite.",
+        "Nu pot fi convertite în monede fiat sau criptomonede."
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "Cum funcționează",
+    "subtitle": "Avem un proces clar și eficient pentru ecosistemul de fidelizare 2.0",
+    "description": "Temporo transformă fiecare interacțiune într-o oportunitate de economisire prin punctele TIM.",
+    "steps": [
+      {
+        "index": "01",
+        "title": "Instalează aplicația xPortal",
+        "description": "Descarcă gratuit pentru iOS sau Android și crează-ți walletul personal pentru a stoca punctele TIM în siguranță."
+      },
+      {
+        "index": "02",
+        "title": "Obține puncte TIM",
+        "description": "Cumpără pachetele Temporo de pe site-ul oficial sau profită de campaniile reward pentru a primi TIM în wallet."
+      },
+      {
+        "index": "03",
+        "title": "Explorează partenerii",
+        "description": "Descoperă produsele și serviciile disponibile și vezi exact ce discount-uri poți activa cu punctele TIM."
+      },
+      {
+        "index": "04",
+        "title": "Activează reducerile",
+        "description": "Anunță partenerul înainte de achiziție, folosește punctele TIM pentru discount și plătește diferența în RON."
+      },
+      {
+        "index": "05",
+        "title": "Bucură-te de beneficii",
+        "description": "Economisești bani reali, câștigi vizibilitate în comunitate și faci parte din ecosistemul care îți aduce valoare."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Întrebări frecvente",
+    "faqs": [
+      {
+        "question": "Ce sunt punctele TIM?",
+        "answer": "Puncte de fidelizare digitale create de Temporo, folosite exclusiv pentru a obține discount-uri la produse și servicii din ecosistemul Temporo."
+      },
+      {
+        "question": "Cât valorează un punct de fidelizare TIM?",
+        "answer": "În afara ecosistemului Temporo, punctele TIM valorează 0 €. În ecosistem, fiecare TIM îți oferă dreptul de a activa o reducere de 1 € la produsele și serviciile eligibile, conform regulilor interne stabilite de fiecare partener."
+      },
+      {
+        "question": "Cum folosesc TIM pentru discount-uri?",
+        "answer": "Înainte de achiziție, anunți vânzătorul partener că vrei să folosești discount-ul Temporo. Vânzătorul îți spune ce procent sau sumă fixă acceptă pentru produs/serviciu sau pentru întreaga achiziție. Tu aplici punctele TIM din wallet, iar restul se plătește cu FIAT (€ / $ / RON etc)."
+      },
+      {
+        "question": "Am nevoie de o aplicație specială pentru TIM?",
+        "answer": "Da. TIM se stochează în wallet-ul xPortal, disponibil gratuit pentru iOS și Android. Dacă nu o ai instalată, descarcă-o acum apăsând pe icon-ul corespunzător de mai jos (App Store sau Google Play)."
+      },
+      {
+        "question": "Cât durează până primesc TIM în wallet?",
+        "answer": "De obicei câteva minute, dar pot apărea întârzieri tehnice. În maximum 24 de ore de la confirmarea plății, punctele apar în walletul tău Xportal, pe care ni l-ai furnizat."
+      },
+      {
+        "question": "Pot combina discount-ul Temporo cu alte promoții?",
+        "answer": "Nu. Discount-ul Temporo nu se cumulează cu alte reduceri sau oferte, cu excepția cazului în care vânzătorul decide altfel."
+      },
+      {
+        "question": "Unde văd lista partenerilor oficiali Temporo?",
+        "answer": "Pe site-ul Temporo, în pagina dedicată \"Parteneri oficiali\" (în curând)."
+      }
+    ]
+  },
   "seo": {
     "title": "Temporo - Soluții digitale rapide",
     "description": "Descoperă Temporo, platforma pentru soluții digitale simple, rapide și eficiente pentru proiectul tău."

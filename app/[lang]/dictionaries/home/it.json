@@ -10,6 +10,137 @@
     "imageSrc": "/hero-globe.png",
     "imageAlt": "Rete Globale Temporo"
   },
+  "aboutSection": {
+    "subtitle": "SU TEMPORO",
+    "title": "L'ecosistema di fidelizzazione 2.0 semplice, chiaro e trasparente",
+    "description": "Temporo è un nuovo ecosistema digitale di fidelizzazione, creato per trasformare ogni acquisto in un'opportunità di risparmio.",
+    "timPoints": {
+      "description": "Attraverso i punti TIM, creati da Temporo, ottieni sconti reali su prodotti e servizi, sia nel Negozio Temporo che presso i partner ufficiali."
+    },
+    "timControl": {
+      "description": "I punti TIM sono sotto il tuo controllo: si memorizzano nel wallet xPortal e possono essere utilizzati non appena li ricevi, possono essere trasferiti o regalati."
+    },
+    "mission": {
+      "description": "La nostra missione è costruire una comunità vivace e trasparente, in cui la collaborazione è la chiave.",
+      "benefits": "Temporo diventa il ponte tra membri e partner: i membri risparmiano attraverso sconti significativi, mentre i partner ufficiali guadagnano visibilità, crescita e fedeltà dei loro clienti."
+    },
+    "imageSrc": "/about-saturn.png",
+    "imageAlt": "Ecosistema Temporo"
+  },
+  "whyChooseTim": {
+    "title": "Perché scegliere TIM",
+    "subtitle": "TIM = PUNTI DI FIDELIZZAZIONE 2.0",
+    "features": [
+      {
+        "icon": "📊",
+        "title": "RICOMPENSE PROGRESSIVE",
+        "description": "Più acquisti, più vantaggi reali"
+      },
+      {
+        "icon": "⭐",
+        "title": "BENEFICI ESCLUSIVI",
+        "description": "Accesso a sconti e benefici riservati solo ai membri Temporo"
+      },
+      {
+        "icon": "🕐",
+        "title": "SENZA SORPRESE SPIACEVOLI",
+        "description": "Sconti chiari e facili da attivare senza complicazioni"
+      },
+      {
+        "icon": "👥",
+        "title": "COMUNITÀ ATTIVA",
+        "description": "Fai parte di una comunità dove TIM attiva sconti reali su prodotti e servizi."
+      }
+    ]
+  },
+  "timPointsInfo": {
+    "title": "Cosa devi sapere sui punti TIM",
+    "whatArePoints": {
+      "title": "Cosa SONO i punti TIM",
+      "points": [
+        "Punti di fidelizzazione digitali, parte dell'ecosistema Temporo.",
+        "Utilizzati per sconti su prodotti e servizi (Negozio Temporo e partner ufficiali).",
+        "Trasferibili: possono essere regalati o donati.",
+        "Memorizzati nel wallet xPortal, sotto il controllo esclusivo dell'utente.",
+        "Ottenuti tramite pacchetti Temporo o campagne di reward."
+      ]
+    },
+    "whatAreNotPoints": {
+      "title": "Cosa NON SONO i punti TIM",
+      "points": [
+        "Non sono denaro o criptovalute con liquidità pubblica.",
+        "Non sono voucher legali o fiscali.",
+        "Non sono strumenti finanziari o forme di investimento.",
+        "Fuori dall'ecosistema Temporo, non possono essere utilizzati.",
+        "Non possono essere convertiti in valute fiat o criptovalute."
+      ]
+    }
+  },
+  "howItWorks": {
+    "title": "Come funziona",
+    "subtitle": "Abbiamo un processo chiaro ed efficiente per l'ecosistema di fidelizzazione 2.0",
+    "description": "Temporo trasforma ogni interazione in un'opportunità di risparmio attraverso i punti TIM.",
+    "steps": [
+      {
+        "index": "01",
+        "title": "Installa l'applicazione xPortal",
+        "description": "Scarica gratuitamente per iOS o Android e crea il tuo wallet personale per conservare i punti TIM in sicurezza."
+      },
+      {
+        "index": "02",
+        "title": "Ottieni punti TIM",
+        "description": "Acquista i pacchetti Temporo dal sito ufficiale o approfitta delle campagne reward per ricevere TIM nel wallet."
+      },
+      {
+        "index": "03",
+        "title": "Esplora i partner",
+        "description": "Scopri i prodotti e servizi disponibili e vedi esattamente quali sconti puoi attivare con i punti TIM."
+      },
+      {
+        "index": "04",
+        "title": "Attiva le riduzioni",
+        "description": "Avvisa il partner prima dell'acquisto, usa i punti TIM per lo sconto e paga la differenza in RON."
+      },
+      {
+        "index": "05",
+        "title": "Goditi i benefici",
+        "description": "Risparmi denaro reale, guadagni visibilità nella comunità e fai parte dell'ecosistema che ti riporta valore."
+      }
+    ]
+  },
+  "faq": {
+    "title": "Domande frequenti",
+    "faqs": [
+      {
+        "question": "Cosa sono i punti TIM?",
+        "answer": "Punti di fidelizzazione digitali creati da Temporo, utilizzati esclusivamente per ottenere sconti su prodotti e servizi dell'ecosistema Temporo."
+      },
+      {
+        "question": "Quanto vale un punto di fidelizzazione TIM?",
+        "answer": "Al di fuori dell'ecosistema Temporo, i punti TIM valgono 0 €. Nell'ecosistema, ogni TIM ti offre il diritto di attivare una riduzione di 1 € sui prodotti e servizi idonei, secondo le regole interne stabilite da ogni partner."
+      },
+      {
+        "question": "Come uso TIM per gli sconti?",
+        "answer": "Prima dell'acquisto, avvisa il venditore partner che vuoi utilizzare lo sconto Temporo. Il venditore ti dice che percentuale o somma fissa accetta per prodotto/servizio o per l'intero acquisto. Tu applichi i punti TIM dal wallet, e il resto si paga con FIAT (€ / $ / RON ecc)."
+      },
+      {
+        "question": "Ho bisogno di un'applicazione speciale per TIM?",
+        "answer": "Sì. TIM si conserva nel wallet xPortal, disponibile gratuitamente per iOS e Android. Se non l'hai installata, scaricala ora premendo sull'icona corrispondente qui sotto (App Store o Google Play)."
+      },
+      {
+        "question": "Quanto tempo ci vuole per ricevere TIM nel wallet?",
+        "answer": "Di solito qualche minuto, ma possono verificarsi ritardi tecnici. Entro massimo 24 ore dalla conferma del pagamento, i punti appaiono nel tuo wallet Xportal, che ci hai fornito."
+      },
+      {
+        "question": "Posso combinare lo sconto Temporo con altre promozioni?",
+        "answer": "No. Lo sconto Temporo non si cumula con altre riduzioni o offerte, tranne nel caso in cui il venditore decida diversamente."
+      },
+      {
+        "question": "Dove vedo la lista dei partner ufficiali Temporo?",
+        "answer": "Sul sito Temporo, nella pagina dedicata \"Partner ufficiali\" (presto disponibile)."
+      }
+    ]
+  },
   "seo": {
     "title": "Temporo - Soluzioni digitali veloci",
     "description": "Scopri Temporo, la piattaforma per soluzioni digitali semplici, veloci ed efficienti per il tuo progetto."
