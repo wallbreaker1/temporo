@@ -128,6 +128,10 @@
         "answer": "Sì. TIM si conserva nel wallet xPortal, disponibile gratuitamente per iOS e Android. Se non l'hai installata, scaricala ora premendo sull'icona corrispondente qui sotto (App Store o Google Play)."
       },
       {
+        "question": "Il trasferimento dei punti TIM è gratuito?",
+        "answer": "Non del tutto, ma il costo è praticamente nullo. L'ecosistema Temporo utilizza la blockchain MultiversX, dove i punti TIM sono token ESDT. Per inviare TIM a un altro wallet è previsto un \"gas fee\" pagato in EGLD. L'importo è simbolico – di solito meno di un centesimo – e serve a garantire sicurezza e velocità alla transazione."
+      },
+      {
         "question": "Quanto tempo ci vuole per ricevere TIM nel wallet?",
         "answer": "Di solito qualche minuto, ma possono verificarsi ritardi tecnici. Entro massimo 24 ore dalla conferma del pagamento, i punti appaiono nel tuo wallet Xportal, che ci hai fornito."
       },
@@ -141,8 +145,13 @@
       }
     ]
   },
+  "joinSection": {
+    "title": "Unisciti a Temporo e costruisci il tuo futuro!",
+    "description": "Inizia ora con il tuo primo pacchetto Temporo e usa TIM per sconti reali. Fai parte di un ecosistema esclusivo che ti offre accesso a benefici unici.",
+    "cta": "Acquista TIM"
+  },
   "seo": {
-    "title": "Temporo - Soluzioni digitali veloci",
-    "description": "Scopri Temporo, la piattaforma per soluzioni digitali semplici, veloci ed efficienti per il tuo progetto."
+    "title": "Temporo - Ecosistema di fidelizzazione 2.0 con punti TIM",
+    "description": "Scopri Temporo, l'ecosistema rivoluzionario di fidelizzazione con punti TIM. Ottieni sconti reali su prodotti e servizi, risparmi denaro e fai parte di una comunità trasparente."
   }
 }
