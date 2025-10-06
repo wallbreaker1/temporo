@@ -24,7 +24,7 @@ export default async function LocaleLayout({
         <div className="max-w-6xl mx-auto px-4">
           <Nav dict={navDict} />
           <div className="pt-20">{children}</div>
-          <Footer dict={footerDict} />
+          <Footer dict={footerDict} currentLang={lang as "it" | "ro"} />
         </div>
       </body>
     </html>

@@ -1,6 +1,6 @@
 import { getDictionary } from "./dictionaries";
 import HeroSection from "../../components/HeroSection";
-import AboutSection from "../../components/AboutSection";
+import ColumnWithImage from "../../components/ColumnWithImage";
 import WhyChooseTim from "../../components/WhyChooseTim";
 import TimPointsInfo from "../../components/TimPointsInfo";
 import HowItWorks from "../../components/HowItWorks";
@@ -40,15 +40,19 @@ export default async function Page({
         imageAlt={dict.heroSection.imageAlt || "Temporo Global Network"}
       />
 
-      <AboutSection
+      <ColumnWithImage
         subtitle={dict.aboutSection.subtitle}
         title={dict.aboutSection.title}
         description={dict.aboutSection.description}
-        timPoints={dict.aboutSection.timPoints}
-        timControl={dict.aboutSection.timControl}
-        mission={dict.aboutSection.mission}
-        imageSrc={dict.aboutSection.imageSrc || "/about-wireframe.png"}
-        imageAlt={dict.aboutSection.imageAlt || "Temporo Ecosystem"}
+        contentBlocks={[
+          { description: dict.aboutSection.timPoints.description },
+          { description: dict.aboutSection.timControl.description },
+          { description: dict.aboutSection.mission.description },
+          { description: dict.aboutSection.mission.benefits, highlight: true },
+        ]}
+        imageSrc={dict.aboutSection.imageSrc || "/about-saturn.png"}
+        imageAlt={dict.aboutSection.imageAlt || "Ecosistemul Temporo"}
+        currentLang={lang as "it" | "ro"}
       />
 
       <WhyChooseTim
@@ -71,6 +75,18 @@ export default async function Page({
       />
 
       <FAQ title={dict.faq.title} faqs={dict.faq.faqs} />
+
+      <ColumnWithImage
+        title={dict.joinSection.title}
+        description={dict.joinSection.description}
+        imageSrc="/map.png"
+        imageAlt="Temporo Global Network"
+        cta={{
+          text: dict.joinSection.cta,
+          href: `/${lang}/contact`,
+        }}
+        currentLang={lang as "it" | "ro"}
+      />
     </main>
   );
 }

@@ -60,7 +60,7 @@ export default function Nav({ dict }: NavProps) {
             {isScrolled && isMobile ? (
               <Button variant="primary">
                 <Link href={`/${currentLang}/contact`}>
-                  {dict.contact || "Contact"}
+                  {dict.buyTim || "Cumpără TIM"}
                 </Link>
               </Button>
             ) : (
@@ -71,7 +71,7 @@ export default function Nav({ dict }: NavProps) {
                   width={120}
                   height={40}
                   priority
-                  className="h-10"
+                  className="w-56"
                 />
               </Link>
             )}
@@ -109,7 +109,7 @@ export default function Nav({ dict }: NavProps) {
               <div className="flex items-center gap-4">
                 <Button variant="primary">
                   <Link href={`/${currentLang}/contact`}>
-                    {dict.contact || "Contact"}
+                    {dict.buyTim || "Cumpără TIM"}
                   </Link>
                 </Button>
                 <LanguageSwitcher currentLang={currentLang} />

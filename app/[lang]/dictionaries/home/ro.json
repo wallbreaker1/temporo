@@ -128,6 +128,10 @@
         "answer": "Da. TIM se stochează în wallet-ul xPortal, disponibil gratuit pentru iOS și Android. Dacă nu o ai instalată, descarcă-o acum apăsând pe icon-ul corespunzător de mai jos (App Store sau Google Play)."
       },
       {
+        "question": "Transferul punctelor TIM este gratuit?",
+        "answer": "Nu complet, dar costul este aproape zero. Ecosistemul Temporo folosește blockchainul MultiversX, unde punctele TIM sunt tokeni ESDT. Pentru a trimite TIM către alt wallet există un \"gas fee\" plătit în EGLD. Valoarea este simbolică – de obicei sub un cent – și garantează securitatea și rapiditatea tranzacției."
+      },
+      {
         "question": "Cât durează până primesc TIM în wallet?",
         "answer": "De obicei câteva minute, dar pot apărea întârzieri tehnice. În maximum 24 de ore de la confirmarea plății, punctele apar în walletul tău Xportal, pe care ni l-ai furnizat."
       },
@@ -141,8 +145,13 @@
       }
     ]
   },
+  "joinSection": {
+    "title": "Alătură-te Temporo și construiește-ți viitorul!",
+    "description": "Începe acum cu primul tău pachet Temporo și folosește TIM pentru discount-uri reale. Fă parte dintr-un ecosistem exclusiv care îți oferă acces la beneficii unice.",
+    "cta": "Cumpără TIM"
+  },
   "seo": {
-    "title": "Temporo - Soluții digitale rapide",
-    "description": "Descoperă Temporo, platforma pentru soluții digitale simple, rapide și eficiente pentru proiectul tău."
+    "title": "Temporo - Ecosistemul de fidelizare 2.0 cu puncte TIM",
+    "description": "Descoperă Temporo, ecosistemul revoluționar de fidelizare cu puncte TIM. Obții discount-uri reale la produse și servicii, economisești bani și faci parte dintr-o comunitate transparentă."
   }
 }
