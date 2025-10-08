@@ -26,9 +26,6 @@ export default function HowItWorks({
           <p className="text-white text-lg lg:text-xl mb-6 leading-relaxed">
             {subtitle}
           </p>
-          <p className="text-gray-300 text-base lg:text-lg leading-relaxed">
-            {description}
-          </p>
         </div>
 
         {/* Separator */}
@@ -39,13 +36,6 @@ export default function HowItWorks({
         {/* Secțiunea cu Pașii */}
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8">
-            {/* Intro Card */}
-            <div className="bg-gradient-to-br from-[#D2A55D] to-[#B8944F] p-8 text-black rounded-2xl shadow-2xl lg:col-span-1 flex items-center justify-center min-h-[200px]">
-              <h3 className="text-xl lg:text-2xl font-bold leading-tight text-center">
-                Oferim un proces structurat pentru ecosistemul de fidelizare 2.0
-              </h3>
-            </div>
-
             {/* Steps */}
             {steps.map((step, index) => (
               <div

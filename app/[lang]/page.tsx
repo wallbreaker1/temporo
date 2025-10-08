@@ -4,6 +4,7 @@ import ColumnWithImage from "../../components/ColumnWithImage";
 import WhyChooseTim from "../../components/WhyChooseTim";
 import TimPointsInfo from "../../components/TimPointsInfo";
 import HowItWorks from "../../components/HowItWorks";
+import Calculator from "../../components/Calculator";
 import FAQ from "../../components/FAQ";
 
 export async function generateMetadata({
@@ -72,6 +73,24 @@ export default async function Page({
         subtitle={dict.howItWorks.subtitle}
         description={dict.howItWorks.description}
         steps={dict.howItWorks.steps}
+      />
+
+      <Calculator
+        title={dict.calculator.title}
+        subtitle={dict.calculator.subtitle}
+        disclaimer={dict.calculator.disclaimer}
+        currencyLabel={dict.calculator.currencyLabel}
+        currencyOptionEur={dict.calculator.currencyOptionEur}
+        currencyOptionRon={dict.calculator.currencyOptionRon}
+        productPriceLabel={dict.calculator.productPriceLabel}
+        productPricePlaceholder={dict.calculator.productPricePlaceholder}
+        maxPercentLabel={dict.calculator.maxPercentLabel}
+        maxPercentPlaceholder={dict.calculator.maxPercentPlaceholder}
+        maxAmountLabel={dict.calculator.maxAmountLabel}
+        maxAmountPlaceholder={dict.calculator.maxAmountPlaceholder}
+        pointsUsedLabel={dict.calculator.pointsUsedLabel}
+        amountToPayLabel={dict.calculator.amountToPayLabel}
+        resetButton={dict.calculator.resetButton}
       />
 
       <FAQ title={dict.faq.title} faqs={dict.faq.faqs} />

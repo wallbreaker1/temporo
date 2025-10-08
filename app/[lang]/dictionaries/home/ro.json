@@ -4,7 +4,7 @@
     "description": "Solutii digitale simple si rapide pentru proiectul tau."
   },
   "heroSection": {
-    "title": "Temporo: Ecosistemul revoluționar de fidelizare 2.0",
+    "title": "Ecosistemul revoluționar de fidelizare 2.0",
     "subtitle": "Un mod nou și simplu de a obține discount-uri de până la 90% la produse și servicii în ecosistemul Temporo",
     "description": "Pentru oamenii și afacerile care vor mai mult.",
     "imageSrc": "/hero-globe.png",
@@ -13,16 +13,16 @@
   "aboutSection": {
     "subtitle": "DESPRE TEMPORO",
     "title": "Ecosistemul de fidelizare 2.0 simplu, clar și transparent",
-    "description": "Temporo este un ecosistem digital de fidelizare nou, creat pentru a transforma fiecare achiziție într-o oportunitate de economisire.",
+    "description": "Temporo este un nou ecosistem digital de fidelizare, creat pentru a transforma fiecare achiziție într-o oportunitate de economisire.",
     "timPoints": {
-      "description": "Prin punctele TIM, create de Temporo, obții discount-uri reale la produse și servicii, atât în Magazinul Temporo, cât și la partenerii oficiali."
+      "description": "Prin punctele TIM, create de Temporo, obții discount-uri reale la produsele și serviciile disponibile, atât în Magazinul Temporo, cât și la partenerii oficiali."
     },
     "timControl": {
-      "description": "Punctele TIM sunt sub controlul tău: se stochează în wallet-ul xPortal și pot fi folosite imediat ce le primești, pot fi transferate sau oferite cadou."
+      "description": "Punctele TIM sunt sub controlul tău: se stochează în wallet-ul xPortal și pot fi utilizate, transferate sau oferite cadou imediat ce le primești."
     },
     "mission": {
       "description": "Misiunea noastră este să construim o comunitate vie și transparentă, în care colaborarea este cheia.",
-      "benefits": "Temporo devine puncta dintre membri și parteneri: membrii economisesc prin discount-uri semnificative, iar partenerii oficiali câștigă vizibilitate, creștere și loialitatea clienților lor."
+      "benefits": "Temporo este puntea dintre membri și parteneri: membrii economisesc prin discount-uri semnificative, iar partenerii oficiali câștigă vizibilitate, creștere și loialitatea clienților."
     },
     "imageSrc": "/about-saturn.png",
     "imageAlt": "Ecosistemul Temporo"
@@ -42,7 +42,7 @@
         "description": "Acces la reduceri și beneficii rezervate doar membrilor Temporo"
       },
       {
-        "icon": "🕐",
+        "icon": "🛡️",
         "title": "FĂRĂ SURPRIZE NEPLĂCUTE",
         "description": "Discounturi clare și ușor de activat fără complicații"
       },
@@ -144,6 +144,23 @@
         "answer": "Pe site-ul Temporo, în pagina dedicată \"Parteneri oficiali\" (în curând)."
       }
     ]
+  },
+  "calculator": {
+    "title": "CALCULATOR INTERACTIV",
+    "subtitle": "Simulează valoarea punctelor TIM și vezi instant cât economisești.",
+    "disclaimer": "Calculatorul are scop pur interactiv și pot exista erori de calcul. Te rugăm să verifici datele importante.",
+    "currencyLabel": "Alege moneda:",
+    "currencyOptionEur": "EUR (1 TIM = 1€)",
+    "currencyOptionRon": "RON (1 TIM = 5 RON)",
+    "productPriceLabel": "Preț produs/serviciu:",
+    "productPricePlaceholder": "ex: 100",
+    "maxPercentLabel": "Procent maxim acceptat:",
+    "maxPercentPlaceholder": "ex: 50",
+    "maxAmountLabel": "Limită maximă acceptată:",
+    "maxAmountPlaceholder": "ex: 30",
+    "pointsUsedLabel": "Puncte utilizate:",
+    "amountToPayLabel": "Sumă de plătit:",
+    "resetButton": "Reset"
   },
   "joinSection": {
     "title": "Alătură-te Temporo și construiește-ți viitorul!",

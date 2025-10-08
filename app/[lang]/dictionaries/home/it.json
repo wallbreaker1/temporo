@@ -4,7 +4,7 @@
     "description": "Soluzioni digitali semplici e veloci per il tuo progetto."
   },
   "heroSection": {
-    "title": "Temporo: L'ecosistema rivoluzionario di fidelizzazione 2.0",
+    "title": "L'ecosistema rivoluzionario di fidelizzazione 2.0",
     "subtitle": "Un modo nuovo e semplice per ottenere sconti fino al 90% su prodotti e servizi nell'ecosistema Temporo",
     "description": "Per le persone e le aziende che vogliono di più.",
     "imageSrc": "/hero-globe.png",
@@ -12,17 +12,17 @@
   },
   "aboutSection": {
     "subtitle": "SU TEMPORO",
-    "title": "L'ecosistema di fidelizzazione 2.0 semplice, chiaro e trasparente",
-    "description": "Temporo è un nuovo ecosistema digitale di fidelizzazione, creato per trasformare ogni acquisto in un'opportunità di risparmio.",
+    "title": "Semplice, chiaro e trasparente",
+    "description": "Temporo è un nuovo ecosistema digitale di fidelizzazione, creato per trasformare ogni acquisto in un’opportunità di risparmio.",
     "timPoints": {
-      "description": "Attraverso i punti TIM, creati da Temporo, ottieni sconti reali su prodotti e servizi, sia nel Negozio Temporo che presso i partner ufficiali."
+      "description": "Con i punti TIM, sviluppati da Temporo, ottieni sconti reali su prodotti e servizi, sia nel Negozio Temporo che presso i partner ufficiali."
     },
     "timControl": {
-      "description": "I punti TIM sono sotto il tuo controllo: si memorizzano nel wallet xPortal e possono essere utilizzati non appena li ricevi, possono essere trasferiti o regalati."
+      "description": "I punti TIM restano sempre sotto il tuo controllo: vengono conservati nel wallet xPortal e possono essere utilizzati, trasferiti o regalati non appena li ricevi."
     },
     "mission": {
-      "description": "La nostra missione è costruire una comunità vivace e trasparente, in cui la collaborazione è la chiave.",
-      "benefits": "Temporo diventa il ponte tra membri e partner: i membri risparmiano attraverso sconti significativi, mentre i partner ufficiali guadagnano visibilità, crescita e fedeltà dei loro clienti."
+      "description": "La nostra missione è quella di costruire una comunità dinamica e trasparente, in cui la collaborazione è la chiave.",
+      "benefits": "Temporo è il ponte che unisce membri e partner: i membri risparmiano grazie a sconti significativi, mentre i partner ufficiali guadagnano visibilità, crescita e la fedeltà dei propri clienti."
     },
     "imageSrc": "/about-saturn.png",
     "imageAlt": "Ecosistema Temporo"
@@ -42,7 +42,7 @@
         "description": "Accesso a sconti e benefici riservati solo ai membri Temporo"
       },
       {
-        "icon": "🕐",
+        "icon": "🛡️",
         "title": "SENZA SORPRESE SPIACEVOLI",
         "description": "Sconti chiari e facili da attivare senza complicazioni"
       },
@@ -79,7 +79,6 @@
   "howItWorks": {
     "title": "Come funziona",
     "subtitle": "Abbiamo un processo chiaro ed efficiente per l'ecosistema di fidelizzazione 2.0",
-    "description": "Temporo trasforma ogni interazione in un'opportunità di risparmio attraverso i punti TIM.",
     "steps": [
       {
         "index": "01",
@@ -125,7 +124,7 @@
       },
       {
         "question": "Ho bisogno di un'applicazione speciale per TIM?",
-        "answer": "Sì. TIM si conserva nel wallet xPortal, disponibile gratuitamente per iOS e Android. Se non l'hai installata, scaricala ora premendo sull'icona corrispondente qui sotto (App Store o Google Play)."
+        "answer": "Sì. TIM si conserva nel wallet xPortal, disponibile gratuitamente per iOS e Android.Puoi scaricarla subito premendo sull’icona corrispondente nella sezione “Come funziona"
       },
       {
         "question": "Il trasferimento dei punti TIM è gratuito?",
@@ -144,6 +143,23 @@
         "answer": "Sul sito Temporo, nella pagina dedicata \"Partner ufficiali\" (presto disponibile)."
       }
     ]
+  },
+  "calculator": {
+    "title": "CALCOLATORE INTERATTIVO",
+    "subtitle": "Simula il valore dei punti TIM e vedi istantaneamente quanto risparmi.",
+    "disclaimer": "Il calcolatore ha scopo puramente interattivo e potrebbero esserci errori di calcolo. Ti preghiamo di verificare i dati importanti.",
+    "currencyLabel": "Scegli la valuta:",
+    "currencyOptionEur": "EUR (1 TIM = 1€)",
+    "currencyOptionRon": "RON (1 TIM = 5 RON)",
+    "productPriceLabel": "Prezzo prodotto/servizio:",
+    "productPricePlaceholder": "es: 100",
+    "maxPercentLabel": "Percentuale massima accettata:",
+    "maxPercentPlaceholder": "es: 50",
+    "maxAmountLabel": "Limite massimo accettato:",
+    "maxAmountPlaceholder": "es: 30",
+    "pointsUsedLabel": "Punti utilizzati:",
+    "amountToPayLabel": "Importo da pagare:",
+    "resetButton": "Reset"
   },
   "joinSection": {
     "title": "Unisciti a Temporo e costruisci il tuo futuro!",
