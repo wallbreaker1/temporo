@@ -41,29 +41,29 @@ export default function Sidebar({
       <ul className="pt-24 w-64 text-center list-none space-y-6">
         <li>
           <Link
-            href={`/${currentLang}`}
+            href={`/${currentLang}/shop`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
-            {dict.home || "Acasă"}
+            {dict.shop || "Magazin Temporo"}
           </Link>
         </li>
         <li>
           <Link
-            href={`/${currentLang}/about`}
+            href={`/${currentLang}/partners`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
-            {dict.about || "Despre"}
+            {dict.partners || "Parteneri oficiali"}
           </Link>
         </li>
         <li>
           <Link
-            href={`/${currentLang}/services`}
+            href={`/${currentLang}/news`}
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
-            {dict.services || "Servicii"}
+            {dict.news || "News"}
           </Link>
         </li>
         <li>

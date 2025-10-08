@@ -35,25 +35,49 @@ export default function LanguageSwitcher({
 
   if (isMobile) {
     return (
-      <Link
-        href={`/${otherLanguage?.code}${pathWithoutLang}`}
-        className="flex items-center justify-center py-2 hover:text-[#D2A55D] transition-colors"
-        title={`Schimbă în ${otherLanguage?.name}`}
-      >
-        <span className="text-white text-lg">{currentLanguage?.flag}</span>
-      </Link>
+      <div className="flex items-center gap-2">
+        {languages.map((lang) => (
+          <Link
+            key={lang.code}
+            href={`/${lang.code}${pathWithoutLang}`}
+            className="flex items-center justify-center py-2 hover:text-[#D2A55D] transition-all duration-200"
+            title={`Schimbă în ${lang.name}`}
+          >
+            <span
+              className={`text-white transition-all duration-200 ${
+                currentLang === lang.code
+                  ? "text-xl scale-110"
+                  : "text-lg opacity-70 hover:opacity-100"
+              }`}
+            >
+              {lang.flag}
+            </span>
+          </Link>
+        ))}
+      </div>
     );
   }
 
   return (
-    <Link
-      href={`/${otherLanguage?.code}${pathWithoutLang}`}
-      className="flex items-center gap-1 hover:text-[#D2A55D] transition-colors group"
-      title={`Schimbă în ${otherLanguage?.name}`}
-    >
-      <span className="text-white text-xl group-hover:scale-110 transition-transform">
-        {currentLanguage?.flag}
-      </span>
-    </Link>
+    <div className="flex items-center gap-2">
+      {languages.map((lang) => (
+        <Link
+          key={lang.code}
+          href={`/${lang.code}${pathWithoutLang}`}
+          className="flex items-center hover:text-[#D2A55D] transition-all duration-200 group"
+          title={`Schimbă în ${lang.name}`}
+        >
+          <span
+            className={`text-white transition-all duration-200 ${
+              currentLang === lang.code
+                ? "text-2xl scale-110"
+                : "text-xl opacity-70 hover:opacity-100 group-hover:scale-105"
+            }`}
+          >
+            {lang.flag}
+          </span>
+        </Link>
+      ))}
+    </div>
   );
 }

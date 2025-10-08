@@ -80,26 +80,26 @@ export default function Nav({ dict }: NavProps) {
               <ul className="flex gap-x-6 list-none m-0 p-0">
                 <li>
                   <Link
-                    href={`/${currentLang}`}
+                    href={`/${currentLang}/shop`}
                     className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                   >
-                    {dict.home || "Acasă"}
+                    {dict.shop || "Magazin Temporo"}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={`/${currentLang}/about`}
+                    href={`/${currentLang}/partners`}
                     className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                   >
-                    {dict.about || "Despre"}
+                    {dict.partners || "Parteneri oficiali"}
                   </Link>
                 </li>
                 <li>
                   <Link
-                    href={`/${currentLang}/services`}
+                    href={`/${currentLang}/news`}
                     className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                   >
-                    {dict.services || "Servicii"}
+                    {dict.news || "News"}
                   </Link>
                 </li>
               </ul>
