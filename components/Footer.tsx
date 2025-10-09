@@ -11,6 +11,7 @@ type FooterDict = {
   company?: string;
   legal?: string;
   home?: string;
+  description: string;
 };
 
 export default function Footer({
@@ -56,8 +57,7 @@ export default function Footer({
               />
             </Link>
             <p className="text-gray-400 text-base leading-relaxed max-w-md">
-              Ecosistemul revoluționar de fidelizare 2.0 cu puncte TIM. Obții
-              discount-uri reale și faci parte dintr-o comunitate transparentă.
+              {dict.description}
             </p>
           </div>
 
