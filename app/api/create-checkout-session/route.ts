@@ -1,10 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: "2025-09-30.clover",
-});
-
 const timPackages = {
   iron: {
     name: "Pachet Iron",
@@ -28,6 +24,11 @@ const timPackages = {
 
 export async function POST(request: NextRequest) {
   try {
+    // Initialize Stripe with the secret key
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+      apiVersion: "2025-09-30.clover",
+    });
+
     const { packageId, lang } = await request.json();
 
     const selectedPackage = timPackages[packageId as keyof typeof timPackages];
