@@ -93,7 +93,7 @@ export default function Footer({
               </li>
               <li>
                 <span className="text-gray-500 cursor-not-allowed">
-                  {dict.contact || "Contact"} (Soon)
+                  {dict?.contact || "Contact"} (Soon)
                 </span>
               </li>
             </ul>

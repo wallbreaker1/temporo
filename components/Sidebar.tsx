@@ -45,7 +45,7 @@ export default function Sidebar({
             onClick={handleBurger}
             className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
           >
-            {dict.shop || "Magazin Temporo"}
+            {dict?.shop || "Magazin Temporo"}
           </Link>
         </li>
         <li>
@@ -53,7 +53,7 @@ export default function Sidebar({
             onClick={handleBurger}
             className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.partners || "Parteneri oficiali"} (Soon)
+            {dict?.partners || "Parteneri oficiali"} (Soon)
           </span>
         </li>
         <li>
@@ -61,7 +61,7 @@ export default function Sidebar({
             onClick={handleBurger}
             className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.news || "News"} (Soon)
+            {dict?.news || "News"} (Soon)
           </span>
         </li>
         <li>
@@ -69,7 +69,7 @@ export default function Sidebar({
             onClick={handleBurger}
             className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.contact || "Contact"} (Soon)
+            {dict?.contact || "Contact"} (Soon)
           </span>
         </li>
       </ul>
