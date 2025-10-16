@@ -1,29 +1,29 @@
-import TimPackages from '../../../components/TimPackages';
-import { getDictionary } from '../dictionaries';
+import TimPackages from "../../../components/TimPackages";
+import { getDictionary } from "../dictionaries";
 
 interface ShopPageProps {
   params: Promise<{
-    lang: 'ro' | 'it';
+    lang: "ro" | "it";
   }>;
 }
 
 export default async function ShopPage({ params }: ShopPageProps) {
   const { lang } = await params;
-  const dict = await getDictionary(lang, 'shop');
+  const dict = await getDictionary(lang, "shop");
 
   const timPackages = [
     {
-      id: 'iron',
+      id: "iron",
       name: dict.packages.iron.name,
-      icon: 'iron',
+      icon: "iron",
       price: 10,
       timAmount: 30,
       description: dict.packages.iron.description,
     },
     {
-      id: 'silver',
+      id: "silver",
       name: dict.packages.silver.name,
-      icon: 'silver',
+      icon: "silver",
       price: 50,
       timAmount: 150,
       bonusAmount: 50,
@@ -31,9 +31,9 @@ export default async function ShopPage({ params }: ShopPageProps) {
       popular: true,
     },
     {
-      id: 'gold',
+      id: "gold",
       name: dict.packages.gold.name,
-      icon: 'gold',
+      icon: "gold",
       price: 250,
       timAmount: 750,
       bonusAmount: 100,

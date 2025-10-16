@@ -1,30 +1,36 @@
-import { getDictionary } from '../dictionaries';
+import { getDictionary } from "../dictionaries";
 
 interface SuccessPageProps {
   params: Promise<{
-    lang: 'ro' | 'it';
+    lang: "ro" | "it";
   }>;
 }
 
 export default async function SuccessPage({ params }: SuccessPageProps) {
   const { lang } = await params;
-  const dict = await getDictionary(lang, 'success');
-  
+  const dict = await getDictionary(lang, "success");
+
   return (
     <main className="min-h-screen bg-black flex items-center justify-center">
       <div className="max-w-md mx-auto text-center px-4">
         <div className="mb-8">
           <div className="w-20 h-20 bg-green-500 rounded-full mx-auto flex items-center justify-center mb-4">
-            <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+            <svg
+              className="w-10 h-10 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
             </svg>
           </div>
-          <h1 className="text-3xl font-bold text-white mb-4">
-            {dict.title}
-          </h1>
-          <p className="text-gray-300 mb-8">
-            {dict.subtitle}
-          </p>
+          <h1 className="text-3xl font-bold text-white mb-4">{dict.title}</h1>
+          <p className="text-gray-300 mb-8">{dict.subtitle}</p>
           <div className="space-y-4">
             <a
               href={`/${lang}`}
