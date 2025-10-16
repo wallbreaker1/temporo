@@ -1,0 +1,22 @@
+{
+  "subtitle": "ALEGE PACHETUL CARE ÎȚI SE POTRIVEȘTE",
+  "title": "Primești puncte TIM pe care le folosești pentru discount-uri la produse și servicii din ecosistemul Temporo.",
+  "buyButton": "Cumpără acum",
+  "processingButton": "Se procesează...",
+  "popularBadge": "POPULAR",
+  "footerNote": "Prețurile pachetelor nu includ TVA. Discount-ul Temporo nu se cumulează cu alte reduceri sau promoții, cu excepția cazului în care vibrațiile decide altfel.",
+  "packages": {
+    "iron": {
+      "name": "Pachet Iron",
+      "description": "Cele 30 TIM îți oferă reduceri de până la 30 € suficient cat să descoperi cum funcționează ecosistemul."
+    },
+    "silver": {
+      "name": "Pachet Silver",
+      "description": "Primești 200 TIM, cu care activezi reduceri de până la 200 €. Perfect pentru utilizatori constienți care vor să economisească la fiecare achiziție."
+    },
+    "gold": {
+      "name": "Pachet Gold",
+      "description": "Primești 850 TIM, echivalentul reducerilor de până la 850 €. Ideal pentru cei care vor să profite la maximum de ecosistemul Temporo."
+    }
+  }
+}

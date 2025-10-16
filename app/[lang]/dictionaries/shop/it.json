@@ -1,0 +1,22 @@
+{
+  "subtitle": "SCEGLI IL PACCHETTO CHE FA PER TE",
+  "title": "Ricevi punti TIM che puoi utilizzare per sconti su prodotti e servizi dell'ecosistema Temporo.",
+  "buyButton": "Acquista ora",
+  "processingButton": "Elaborazione...",
+  "popularBadge": "POPOLARE",
+  "footerNote": "I prezzi dei pacchetti non includono l'IVA. Lo sconto Temporo non è cumulabile con altre riduzioni o promozioni, eccetto quando le vibrazioni decidono diversamente.",
+  "packages": {
+    "iron": {
+      "name": "Pacchetto Iron",
+      "description": "I 30 TIM ti offrono sconti fino a 30 € sufficienti per scoprire come funziona l'ecosistema."
+    },
+    "silver": {
+      "name": "Pacchetto Silver",
+      "description": "Ricevi 200 TIM, con i quali attivi sconti fino a 200 €. Perfetto per utenti consapevoli che vogliono risparmiare su ogni acquisto."
+    },
+    "gold": {
+      "name": "Pacchetto Gold",
+      "description": "Ricevi 850 TIM, l'equivalente di sconti fino a 850 €. Ideale per chi vuole sfruttare al massimo l'ecosistema Temporo."
+    }
+  }
+}

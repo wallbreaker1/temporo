@@ -59,7 +59,7 @@ export default function Nav({ dict }: NavProps) {
           <div className="px-6 py-4 flex items-center justify-between gap-8">
             {isScrolled && isMobile ? (
               <Button variant="primary">
-                <Link href={`/${currentLang}/contact`}>
+                <Link href={`/${currentLang}/shop`}>
                   {dict.buyTim || "Cumpără TIM"}
                 </Link>
               </Button>
@@ -108,7 +108,7 @@ export default function Nav({ dict }: NavProps) {
             {!isMobile && (
               <div className="flex items-center gap-4">
                 <Button variant="primary">
-                  <Link href={`/${currentLang}/contact`}>
+                  <Link href={`/${currentLang}/shop`}>
                     {dict.buyTim || "Cumpără TIM"}
                   </Link>
                 </Button>
