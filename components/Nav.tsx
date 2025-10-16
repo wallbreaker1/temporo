@@ -83,24 +83,24 @@ export default function Nav({ dict }: NavProps) {
                     href={`/${currentLang}/shop`}
                     className="text-white hover:text-[#D2A55D] transition-colors font-medium"
                   >
-                    {dict.shop || "Magazin Temporo"}
+                    {dict?.shop || "Magazin Temporo"}
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href={`/${currentLang}/partners`}
-                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                                    <span
+                    className="text-sm font-medium text-white/50 cursor-not-allowed"
+                    title="Coming soon"
                   >
-                    {dict.partners || "Parteneri oficiali"}
-                  </Link>
+                    {dict?.nav?.partners || "Parteneri"}
+                  </span>
                 </li>
                 <li>
-                  <Link
-                    href={`/${currentLang}/news`}
-                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                  <span
+                    className="text-sm font-medium text-white/50 cursor-not-allowed"
+                    title="Coming soon"
                   >
-                    {dict.news || "News"}
-                  </Link>
+                    {dict?.nav?.news || "News"}
+                  </span>
                 </li>
               </ul>
             )}
