@@ -92,12 +92,9 @@ export default function Footer({
                 </Link>
               </li>
               <li>
-                <Link
-                  href={`/${currentLang}/contact`}
-                  className="text-gray-400 hover:text-[#D2A55D] transition-colors"
-                >
-                  {dict.contact || "Contact"}
-                </Link>
+                <span className="text-gray-500 cursor-not-allowed">
+                  {dict.contact || "Contact"} (Soon)
+                </span>
               </li>
             </ul>
           </div>

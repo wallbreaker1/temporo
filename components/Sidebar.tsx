@@ -49,31 +49,28 @@ export default function Sidebar({
           </Link>
         </li>
         <li>
-          <Link
-            href={`/${currentLang}/partners`}
+          <span
             onClick={handleBurger}
-            className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
+            className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.partners || "Parteneri oficiali"}
-          </Link>
+            {dict.partners || "Parteneri oficiali"} (Soon)
+          </span>
         </li>
         <li>
-          <Link
-            href={`/${currentLang}/news`}
+          <span
             onClick={handleBurger}
-            className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
+            className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.news || "News"}
-          </Link>
+            {dict.news || "News"} (Soon)
+          </span>
         </li>
         <li>
-          <Link
-            href={`/${currentLang}/contact`}
+          <span
             onClick={handleBurger}
-            className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
+            className="block text-white/50 text-2xl cursor-not-allowed"
           >
-            {dict.contact || "Contact"}
-          </Link>
+            {dict.contact || "Contact"} (Soon)
+          </span>
         </li>
       </ul>
 

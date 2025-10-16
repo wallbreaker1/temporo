@@ -87,20 +87,20 @@ export default function Nav({ dict }: NavProps) {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href={`/${currentLang}/partners`}
-                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                                    <span
+                    className="text-sm font-medium text-white/50 cursor-not-allowed"
+                    title="Coming soon"
                   >
-                    {dict.partners || "Parteneri oficiali"}
-                  </Link>
+                    {dict.nav.partners}
+                  </span>
                 </li>
                 <li>
-                  <Link
-                    href={`/${currentLang}/news`}
-                    className="text-white hover:text-[#D2A55D] transition-colors font-medium"
+                  <span
+                    className="text-sm font-medium text-white/50 cursor-not-allowed"
+                    title="Coming soon"
                   >
-                    {dict.news || "News"}
-                  </Link>
+                    {dict.nav.news}
+                  </span>
                 </li>
               </ul>
             )}

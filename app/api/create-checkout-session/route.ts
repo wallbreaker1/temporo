@@ -24,12 +24,24 @@ const timPackages = {
 
 export async function POST(request: NextRequest) {
   try {
+    console.log("Environment variables check:", {
+      hasStripeKey: !!process.env.STRIPE_SECRET_KEY,
+      hasBaseUrl: !!process.env.NEXT_PUBLIC_BASE_URL,
+      baseUrl: process.env.NEXT_PUBLIC_BASE_URL,
+    });
+
+    if (!process.env.STRIPE_SECRET_KEY) {
+      console.error("STRIPE_SECRET_KEY is missing!");
+      return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
+    }
+
     // Initialize Stripe with the secret key
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
       apiVersion: "2025-09-30.clover",
     });
 
     const { packageId, lang } = await request.json();
+    console.log("Request payload:", { packageId, lang });
 
     const selectedPackage = timPackages[packageId as keyof typeof timPackages];
 
@@ -72,7 +84,12 @@ export async function POST(request: NextRequest) {
       url: session.url,
     });
   } catch (error) {
-    console.error("Stripe error:", error);
+    console.error("=== Detailed Stripe Error ===");
+    console.error("Error type:", typeof error);
+    console.error("Error message:", error instanceof Error ? error.message : String(error));
+    console.error("Error stack:", error instanceof Error ? error.stack : "No stack");
+    console.error("Full error object:", error);
+    
     return NextResponse.json(
       { error: "Eroare la procesarea plății" },
       { status: 500 }
