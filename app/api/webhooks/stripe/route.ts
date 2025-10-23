@@ -6,7 +6,14 @@ export async function POST(request: NextRequest) {
     apiVersion: "2025-09-30.clover",
   });
 
-  const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET!;
+  const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
+  
+  // If no webhook secret is configured, just acknowledge the webhook
+  if (!endpointSecret) {
+    console.log("Webhook received but no secret configured - skipping verification");
+    return NextResponse.json({ received: true, processed: false });
+  }
+
   const body = await request.text();
   const sig = request.headers.get("stripe-signature")!;
 
