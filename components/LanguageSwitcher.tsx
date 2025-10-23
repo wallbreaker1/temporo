@@ -21,12 +21,32 @@ export default function LanguageSwitcher({
     {
       code: "ro" as const,
       name: "Română",
-      flag: "🇷🇴",
+      flag: (
+        <svg
+          className="w-5 h-4"
+          viewBox="0 0 3 2"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1" height="2" fill="#002B7F" />
+          <rect x="1" width="1" height="2" fill="#FCD116" />
+          <rect x="2" width="1" height="2" fill="#CE1126" />
+        </svg>
+      ),
     },
     {
       code: "it" as const,
       name: "Italiana",
-      flag: "🇮🇹",
+      flag: (
+        <svg
+          className="w-5 h-4"
+          viewBox="0 0 3 2"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="1" height="2" fill="#009246" />
+          <rect x="1" width="1" height="2" fill="#FFFFFF" />
+          <rect x="2" width="1" height="2" fill="#CE2B37" />
+        </svg>
+      ),
     },
   ];
 
