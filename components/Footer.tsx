@@ -51,9 +51,10 @@ export default function Footer({
               <Image
                 src="/logo.png"
                 alt="Temporo Logo"
-                width={160}
-                height={54}
-                className="w-56"
+                width={224}
+                height={75}
+                className="w-56 h-auto"
+                quality={100}
               />
             </Link>
             <p className="text-gray-400 text-base leading-relaxed max-w-md">
@@ -131,10 +132,6 @@ export default function Footer({
         <div className="mt-12 pt-8 border-t border-gray-800">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">{dict.copyright}</p>
-            <div className="flex items-center gap-2 text-sm text-gray-400">
-              <span>Powered by</span>
-              <span className="text-[#D2A55D] font-medium">MultiversX</span>
-            </div>
           </div>
         </div>
       </div>

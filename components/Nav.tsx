@@ -68,10 +68,11 @@ export default function Nav({ dict }: NavProps) {
                 <Image
                   src="/logo.png"
                   alt="Temporo Logo"
-                  width={120}
-                  height={40}
+                  width={224}
+                  height={75}
                   priority
-                  className="w-56"
+                  className="w-56 h-auto"
+                  quality={100}
                 />
               </Link>
             )}
@@ -87,7 +88,7 @@ export default function Nav({ dict }: NavProps) {
                   </Link>
                 </li>
                 <li>
-                                    <span
+                  <span
                     className="text-sm font-medium text-white/50 cursor-not-allowed"
                     title="Coming soon"
                   >
