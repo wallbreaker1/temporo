@@ -7,10 +7,12 @@ export async function POST(request: NextRequest) {
   });
 
   const endpointSecret = process.env.STRIPE_WEBHOOK_SECRET;
-  
+
   // If no webhook secret is configured, just acknowledge the webhook
   if (!endpointSecret) {
-    console.log("Webhook received but no secret configured - skipping verification");
+    console.log(
+      "Webhook received but no secret configured - skipping verification"
+    );
     return NextResponse.json({ received: true, processed: false });
   }
 
