@@ -109,7 +109,7 @@ export default function Nav({ dict }: NavProps) {
             {!isMobile && (
               <div className="flex items-center gap-4">
                 <Button variant="primary">
-                  <Link href={`/${currentLang}/shop`}>
+                  <Link href={`/${currentLang}/buy-tim`}>
                     {dict.buyTim || "Cumpără TIM"}
                   </Link>
                 </Button>

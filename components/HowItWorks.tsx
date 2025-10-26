@@ -15,6 +15,13 @@ interface HowItWorksProps {
       onClick: () => void;
       variant?: "primary" | "secondary";
     };
+    customButtons?: {
+      text: string;
+      onClick: () => void;
+      variant?: "primary" | "secondary";
+      svgPath?: string;
+      href?: string;
+    }[];
   }[];
 }
 
@@ -306,6 +313,74 @@ export default function HowItWorks({
                         >
                           {step.button.text}
                         </button>
+                      )}
+
+                      {/* Custom Buttons */}
+                      {step.customButtons && isActive && !isDragging && (
+                        <div className="mt-4 md:mt-6 flex flex-wrap gap-3 pointer-events-auto">
+                          {step.customButtons.map((customButton, btnIndex) =>
+                            customButton.href ? (
+                              <a
+                                key={btnIndex}
+                                href={customButton.href}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  if (customButton.onClick) {
+                                    customButton.onClick();
+                                  }
+                                }}
+                                className="inline-block transition-all duration-300 hover:scale-105"
+                              >
+                                {customButton.svgPath ? (
+                                  <img
+                                    src={customButton.svgPath}
+                                    alt={customButton.text}
+                                    className="h-12 md:h-14 w-auto max-w-22 md:max-w-36"
+                                  />
+                                ) : (
+                                  <span
+                                    className={`px-4 md:px-6 py-2 md:py-3 rounded-lg text-sm md:text-base font-semibold transition-all duration-300 inline-block ${
+                                      customButton.variant === "secondary"
+                                        ? "bg-transparent border-2 border-[#D2A55D] text-[#D2A55D] hover:bg-[#D2A55D] hover:text-black"
+                                        : "bg-[#D2A55D] text-black hover:bg-[#E6B96A] shadow-lg"
+                                    }`}
+                                  >
+                                    {customButton.text}
+                                  </span>
+                                )}
+                              </a>
+                            ) : (
+                              <button
+                                key={btnIndex}
+                                onClick={(e) => {
+                                  e.stopPropagation();
+                                  customButton.onClick();
+                                }}
+                                className="transition-all duration-300 hover:scale-105 self-start"
+                              >
+                                {customButton.svgPath ? (
+                                  <img
+                                    src={customButton.svgPath}
+                                    alt={customButton.text}
+                                    className="h-12 md:h-14 w-auto max-w-22 md:max-w-36"
+                                  />
+                                ) : (
+                                  <span
+                                    className={`px-4 md:px-6 py-2 md:py-3 rounded-lg text-sm md:text-base font-semibold transition-all duration-300 inline-block ${
+                                      customButton.variant === "secondary"
+                                        ? "bg-transparent border-2 border-[#D2A55D] text-[#D2A55D] hover:bg-[#D2A55D] hover:text-black"
+                                        : "bg-[#D2A55D] text-black hover:bg-[#E6B96A] shadow-lg"
+                                    }`}
+                                  >
+                                    {customButton.text}
+                                  </span>
+                                )}
+                              </button>
+                            )
+                          )}
+                        </div>
                       )}
                     </div>
                   </div>

@@ -78,18 +78,18 @@ export default function Footer({
               </li>
               <li>
                 <Link
-                  href={`/${currentLang}/about`}
+                  href={`/${currentLang}/network`}
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
                 >
-                  {dict.about || "Despre"}
+                  {currentLang === "it" ? "Rete Temporo" : "Rețea Temporo"}
                 </Link>
               </li>
               <li>
                 <Link
-                  href={`/${currentLang}/services`}
+                  href={`/${currentLang}/shop`}
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
                 >
-                  {dict.services || "Servicii"}
+                  {currentLang === "it" ? "Negozio Temporo" : "Magazin Temporo"}
                 </Link>
               </li>
               <li>
@@ -108,22 +108,44 @@ export default function Footer({
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/privacy"
+                  href={`/documents/${currentLang}/legal-${currentLang}/${currentLang === "it" ? "Termini%20e%20condizioni.pdf" : "Termeni%20și%20Condiții.pdf"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
                 >
-                  {dict.privacy}
+                  {currentLang === "it" ? "Termini e Condizioni" : "Termeni și Condiții"}
                 </Link>
               </li>
-              {dict.terms && (
-                <li>
-                  <Link
-                    href="/terms"
-                    className="text-gray-400 hover:text-[#D2A55D] transition-colors"
-                  >
-                    {dict.terms}
-                  </Link>
-                </li>
-              )}
+              <li>
+                <Link
+                  href={`/documents/${currentLang}/legal-${currentLang}/${currentLang === "it" ? "Politica%20sulla%20privacy.pdf" : "Politica%20de%20Confidențialitate.pdf"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                >
+                  {currentLang === "it" ? "Politica sulla Privacy" : "Politica de Confidențialitate"}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/documents/${currentLang}/legal-${currentLang}/${currentLang === "it" ? "Disclaimer%20Ufficiale%20TIM.pdf" : "Disclaimer%20Oficial%20%20Puncte%20de%20Fidelitate%20TIM.pdf"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                >
+                  {currentLang === "it" ? "Disclaimer Ufficiale TIM" : "Disclaimer Oficial TIM"}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`/documents/${currentLang}/legal-${currentLang}/${currentLang === "it" ? "Disclaimer%20di%20Responsabilità.pdf" : "Disclaimer%20oficial%20Temporo.pdf"}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                >
+                  {currentLang === "it" ? "Disclaimer di Responsabilità" : "Disclaimer Oficial Temporo"}
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

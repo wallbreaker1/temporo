@@ -102,7 +102,7 @@ export default async function Page({
         imageAlt="Temporo Global Network"
         cta={{
           text: dict.joinSection.cta,
-          href: `/${lang}/shop`,
+          href: `/${lang}/buy-tim`,
         }}
         currentLang={lang as "it" | "ro"}
       />

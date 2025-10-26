@@ -84,12 +84,31 @@
       {
         "index": "01",
         "title": "Instalează aplicația xPortal",
-        "description": "Descarcă gratuit pentru iOS sau Android și crează-ți walletul personal pentru a stoca punctele TIM în siguranță."
+        "description": "Descarcă gratuit pentru iOS sau Android și crează-ți walletul personal pentru a stoca punctele TIM în siguranță.",
+        "customButtons": [
+          {
+            "text": "App Store",
+            "href": "https://xportal.app.link/referral?code=q5ihlrchir",
+            "svgPath": "/app-store.svg"
+          },
+          {
+            "text": "Google Play",
+            "href": "https://xportal.app.link/referral?code=q5ihlrchir",
+            "svgPath": "/google-play.svg"
+          }
+        ]
       },
       {
         "index": "02",
         "title": "Obține puncte TIM",
-        "description": "Cumpără pachetele Temporo de pe site-ul oficial sau profită de campaniile reward pentru a primi TIM în wallet."
+        "description": "Cumpără pachetele Temporo de pe site-ul oficial sau profită de campaniile reward pentru a primi TIM în wallet.",
+        "customButtons": [
+          {
+            "text": "Cumpără TIM",
+            "href": "/ro/buy-tim",
+            "variant": "primary"
+          }
+        ]
       },
       {
         "index": "03",
