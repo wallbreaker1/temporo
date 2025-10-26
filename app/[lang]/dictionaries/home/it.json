@@ -83,12 +83,31 @@
       {
         "index": "01",
         "title": "Installa l'applicazione xPortal",
-        "description": "Scarica gratuitamente per iOS o Android e crea il tuo wallet personale per conservare i punti TIM in sicurezza."
+        "description": "Scarica gratuitamente per iOS o Android e crea il tuo wallet personale per conservare i punti TIM in sicurezza.",
+        "customButtons": [
+          {
+            "text": "App Store",
+            "href": "https://xportal.app.link/referral?code=q5ihlrchir",
+            "svgPath": "/app-store.svg"
+          },
+          {
+            "text": "Google Play",
+            "href": "https://xportal.app.link/referral?code=q5ihlrchir",
+            "svgPath": "/google-play.svg"
+          }
+        ]
       },
       {
         "index": "02",
         "title": "Ottieni punti TIM",
-        "description": "Acquista i pacchetti Temporo dal sito ufficiale o approfitta delle campagne reward per ricevere TIM nel wallet."
+        "description": "Acquista i pacchetti Temporo dal sito ufficiale o approfitta delle campagne reward per ricevere TIM nel wallet.",
+        "customButtons": [
+          {
+            "text": "Acquista TIM",
+            "href": "/it/buy-tim",
+            "variant": "primary"
+          }
+        ]
       },
       {
         "index": "03",
