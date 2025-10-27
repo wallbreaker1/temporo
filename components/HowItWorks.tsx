@@ -345,7 +345,7 @@ export default function HowItWorks({
                                   <img
                                     src={customButton.svgPath}
                                     alt={customButton.text}
-                                    className="h-12 md:h-14 w-auto max-w-22 md:max-w-36"
+                                    className="h-8 md:h-10 w-auto object-contain"
                                   />
                                 ) : (
                                   <span
@@ -374,7 +374,7 @@ export default function HowItWorks({
                                   <img
                                     src={customButton.svgPath}
                                     alt={customButton.text}
-                                    className="h-12 md:h-14 w-auto max-w-22 md:max-w-36"
+                                    className="h-8 md:h-10 w-auto object-contain"
                                   />
                                 ) : (
                                   <span
