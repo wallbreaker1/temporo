@@ -280,7 +280,11 @@ export default function HowItWorks({
                     onClick={() => onCardClick(index)}
                   >
                     <div
-                      className="group w-full h-full p-4 md:p-8 border-l-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 flex flex-col justify-between pointer-events-none"
+                      className={`group w-full h-full p-4 md:p-8 border-l-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 flex flex-col justify-between ${
+                        isActive && (step.button || step.customButtons)
+                          ? ""
+                          : "pointer-events-none"
+                      }`}
                       style={{
                         width: `${cardWidth}px`,
                         height: `${cardHeight}px`,
@@ -317,21 +321,25 @@ export default function HowItWorks({
 
                       {/* Custom Buttons */}
                       {step.customButtons && isActive && !isDragging && (
-                        <div className="mt-4 md:mt-6 flex flex-wrap gap-3 pointer-events-auto">
+                        <div className="mt-4 md:mt-6 flex flex-wrap gap-3 pointer-events-auto relative z-10">
                           {step.customButtons.map((customButton, btnIndex) =>
                             customButton.href ? (
                               <a
                                 key={btnIndex}
                                 href={customButton.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  if (customButton.onClick) {
-                                    customButton.onClick();
-                                  }
-                                }}
-                                className="inline-block transition-all duration-300 hover:scale-105"
+                                target={
+                                  customButton.href.startsWith("http")
+                                    ? "_blank"
+                                    : "_self"
+                                }
+                                rel={
+                                  customButton.href.startsWith("http")
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
+                                className="inline-block transition-all duration-300 hover:scale-105 pointer-events-auto"
+                                onMouseDown={(e) => e.stopPropagation()}
+                                onTouchStart={(e) => e.stopPropagation()}
                               >
                                 {customButton.svgPath ? (
                                   <img
@@ -358,7 +366,9 @@ export default function HowItWorks({
                                   e.stopPropagation();
                                   customButton.onClick();
                                 }}
-                                className="transition-all duration-300 hover:scale-105 self-start"
+                                className="transition-all duration-300 hover:scale-105 self-start pointer-events-auto"
+                                onMouseDown={(e) => e.stopPropagation()}
+                                onTouchStart={(e) => e.stopPropagation()}
                               >
                                 {customButton.svgPath ? (
                                   <img
