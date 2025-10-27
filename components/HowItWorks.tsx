@@ -281,7 +281,9 @@ export default function HowItWorks({
                   >
                     <div
                       className={`group w-full h-full p-4 md:p-8 border-l-4 border-[#D2A55D] bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 flex flex-col justify-between ${
-                        isActive && (step.button || step.customButtons) ? "" : "pointer-events-none"
+                        isActive && (step.button || step.customButtons)
+                          ? ""
+                          : "pointer-events-none"
                       }`}
                       style={{
                         width: `${cardWidth}px`,
@@ -325,8 +327,16 @@ export default function HowItWorks({
                               <a
                                 key={btnIndex}
                                 href={customButton.href}
-                                target={customButton.href.startsWith('http') ? "_blank" : "_self"}
-                                rel={customButton.href.startsWith('http') ? "noopener noreferrer" : undefined}
+                                target={
+                                  customButton.href.startsWith("http")
+                                    ? "_blank"
+                                    : "_self"
+                                }
+                                rel={
+                                  customButton.href.startsWith("http")
+                                    ? "noopener noreferrer"
+                                    : undefined
+                                }
                                 className="inline-block transition-all duration-300 hover:scale-105 pointer-events-auto"
                                 onMouseDown={(e) => e.stopPropagation()}
                                 onTouchStart={(e) => e.stopPropagation()}
