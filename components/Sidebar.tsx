@@ -40,15 +40,6 @@ export default function Sidebar({
 
       <ul className="pt-24 w-64 text-center list-none space-y-6">
         <li>
-          <Link
-            href={`/${currentLang}/shop`}
-            onClick={handleBurger}
-            className="block text-white hover:text-[#D2A55D] text-2xl transition-colors"
-          >
-            {dict?.shop || "Magazin Temporo"}
-          </Link>
-        </li>
-        <li>
           <span
             onClick={handleBurger}
             className="block text-white/50 text-2xl cursor-not-allowed"

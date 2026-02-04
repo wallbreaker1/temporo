@@ -12,6 +12,8 @@ interface TimPackage {
   bonusAmount?: number;
   description: string;
   popular?: boolean;
+  benefitText?: string[];
+  benefitTitle?: string;
 }
 
 interface TimPackagesProps {
@@ -106,7 +108,7 @@ export default function TimPackages({
           <p className="text-[#D2A55D] text-sm font-semibold tracking-wider uppercase mb-4">
             {dict?.subtitle || "ALEGE PACHETUL CARE ÎȚI SE POTRIVEȘTE"}
           </p>
-          <h2 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+          <h2 className="text-2xl lg:text-3xl font-bold text-white mb-6">
             {title}
           </h2>
           <p className="text-gray-300 text-lg lg:text-xl leading-relaxed">
@@ -116,7 +118,17 @@ export default function TimPackages({
 
         {/* Packages Grid */}
         <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-stretch">
+            {packages.map((pkg, index) => (
+              <div
+                key={pkg.id}
+                className={`relative flex flex-col h-full bg-gradient-to-br from-gray-900 to-black border rounded-2xl p-8 text-center transition-all duration-300 hover:scale-105 hover:shadow-2xl ${
+                  pkg.popular
+                    ? "border-[#D2A55D] shadow-lg shadow-[#D2A55D]/20"
+                    : "border-gray-700 hover:border-[#D2A55D]/50"
+                }`}
+              >
+                {/*
             {packages.map((pkg, index) => (
               <div
                 key={pkg.id}
@@ -125,7 +137,7 @@ export default function TimPackages({
                     ? "border-[#D2A55D] shadow-lg shadow-[#D2A55D]/20"
                     : "border-gray-700 hover:border-[#D2A55D]/50"
                 }`}
-              >
+              >*/}
                 {/* Popular Badge */}
                 {pkg.popular && (
                   <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
@@ -147,9 +159,9 @@ export default function TimPackages({
                 </div>
 
                 {/* Price */}
-                <div className="mb-6">
-                  <div className="text-4xl font-bold text-white mb-2">
-                    {pkg.price} €
+                {/*<div className="mb-6">
+                  <div className="text-2xl font-bold text-white mb-2">
+                    {pkg.price}
                   </div>
                   <div className="text-[#D2A55D] font-semibold">
                     {pkg.timAmount} TIM
@@ -160,9 +172,58 @@ export default function TimPackages({
                       </span>
                     )}
                   </div>
-                </div>
+                </div>*/}
+                <div className="mb-6">
+                  {/* Preț */}
+                  <div className="text-2xl font-bold text-white mb-4">
+                    {pkg.price}
+                  </div>
 
+                  {/* Beneficii */}
+                  <div>
+                    <div className="text-[#D2A55D] font-semibold mb-2">
+                      {pkg.benefitTitle}
+                    </div>
+
+                    <ul className="mt-4 space-y-3 text-sm mx-auto w-fit text-left">
+                      {pkg.benefitText?.map((benefit, index) => (
+                        <li key={index} className="flex items-start gap-3">
+                          <svg
+                            className="w-4 h-4 text-green-500 flex-shrink-0 mt-1"
+                            viewBox="0 0 20 20"
+                            fill="currentColor"
+                            aria-hidden="true"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M16.704 5.29a1 1 0 01.006 1.414l-7.25 7.3a1 1 0 01-1.42-.003L3.29 9.25a1 1 0 011.42-1.41l3.04 3.07 6.54-6.62a1 1 0 011.414 0z"
+                              clipRule="evenodd"
+                            />
+                          </svg>
+
+                          <span className="text-gray-200 leading-relaxed">
+                            {benefit}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
                 {/* Purchase Button */}
+                <button
+                  onClick={() => handlePurchase(pkg.id)}
+                  disabled={selectedPackage === pkg.id}
+                  className={`mt-auto w-full py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105 mb-6 ${
+                    selectedPackage === pkg.id
+                      ? "bg-gray-600 text-gray-400 cursor-not-allowed"
+                      : "bg-[#D2A55D] text-black hover:bg-[#E6B96A] shadow-lg"
+                  }`}
+                >
+                  {selectedPackage === pkg.id
+                    ? dict?.processingButton || "Se procesează..."
+                    : dict?.buyButton || "Cumpără acum"}
+                </button>
+                {/*
                 <button
                   onClick={() => handlePurchase(pkg.id)}
                   disabled={selectedPackage === pkg.id}
@@ -175,7 +236,7 @@ export default function TimPackages({
                   {selectedPackage === pkg.id
                     ? dict?.processingButton || "Se procesează..."
                     : dict?.buyButton || "Cumpără acum"}
-                </button>
+                </button>*/}
 
                 {/* Description */}
                 <p className="text-gray-400 text-sm leading-relaxed">

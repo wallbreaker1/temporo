@@ -81,15 +81,9 @@ export default function Footer({
                   href={`/${currentLang}/network`}
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
                 >
-                  {currentLang === "it" ? "Rete Temporo" : "Rețea Temporo"}
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href={`/${currentLang}/shop`}
-                  className="text-gray-400 hover:text-[#D2A55D] transition-colors"
-                >
-                  {currentLang === "it" ? "Negozio Temporo" : "Magazin Temporo"}
+                  {currentLang === "it"
+                    ? "Partner Aderenti"
+                    : "Parteneri Oficiali"}
                 </Link>
               </li>
               <li>
