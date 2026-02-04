@@ -4,7 +4,7 @@
     "description": "Solutii digitale simple si rapide pentru proiectul tau."
   },
   "heroSection": {
-    "title": "Ecosistemul revoluționar de fidelizare 2.0",
+    "title": "Ecosistemul revoluționar de fidelizare 2.0 Acces la avantaje reale, activabile prin punctele TIM ",
     "subtitle": "Un mod nou și simplu de a obține discount-uri de până la 90% la produse și servicii în ecosistemul Temporo",
     "description": "Pentru oamenii și afacerile care vor mai mult.",
     "imageSrc": "/hero-globe.png",
@@ -12,44 +12,44 @@
   },
   "aboutSection": {
     "subtitle": "DESPRE TEMPORO",
-    "title": "Simplu, clar și transparent",
-    "description": "Temporo este un nou ecosistem digital de fidelizare, creat pentru a transforma fiecare achiziție într-o oportunitate de economisire.",
+    "title": "Simplu. Clar. Transparent.",
+    "description": "Temporo este un ecosistem digital de fidelizare care, prin punctele TIM, îți oferă acces la o rețea de parteneri oficiali și la oportunități dedicate comunității Temporo, inclusiv posibilitatea de a activa reduceri reale la produse și servicii, în condițiile stabilite de fiecare partener oficial.",
     "timPoints": {
-      "description": "Prin punctele TIM, create de Temporo, obții discount-uri reale la produsele și serviciile disponibile, atât în Magazinul Temporo, cât și la partenerii oficiali."
+      "description": "Punctele TIM sunt sub controlul tău și sunt păstrate în wallet-ul tău xPortal."
     },
     "timControl": {
-      "description": "Punctele TIM sunt sub controlul tău: se stochează în wallet-ul xPortal și pot fi utilizate, transferate sau oferite cadou imediat ce le primești."
+      "description": "Temporo nu este un magazin și nu intervine în tranzacțiile comerciale, ci este puntea care conectează persoane și afaceri printr-un model de fidelizare simplu, orientat spre economisire și progres."
     },
     "mission": {
-      "description": "Misiunea noastră este să construim o comunitate vie și transparentă, în care colaborarea este cheia.",
-      "benefits": "Temporo este puntea dintre membri și parteneri: membrii economisesc prin discount-uri semnificative, iar partenerii oficiali câștigă vizibilitate, creștere și loialitatea clienților."
+      "description": "",
+      "benefits": "Misiunea noastră este să simplificăm colaborarea dintre persoane și afaceri printr-un ecosistem de fidelizare simplu, eficient și sustenabil."
     },
     "imageSrc": "/about-saturn.png",
     "imageAlt": "Ecosistemul Temporo"
   },
   "whyChooseTim": {
     "title": "De ce să alegi TIM",
-    "subtitle": "TIM = PUNCTE DE FIDELIZARE 2.0",
+    "subtitle": "TIM sunt puncte de fidelizare incluse într-un serviciu digital",
     "features": [
       {
         "icon": "📊",
         "title": "RECOMPENSE PROGRESIVE",
-        "description": "Mai multe cumpărături, mai multe avantaje reale"
+        "description": "Avantaje tot mai relevante, pe măsură ce folosești ecosistemul Temporo."
       },
       {
         "icon": "⭐",
         "title": "BENEFICII EXCLUSIVE",
-        "description": "Acces la reduceri și beneficii rezervate doar membrilor Temporo"
+        "description": "Acces la beneficii dedicate membrilor comunității Temporo."
       },
       {
         "icon": "🛡️",
         "title": "FĂRĂ SURPRIZE NEPLĂCUTE",
-        "description": "Discounturi clare și ușor de activat fără complicații"
+        "description": "Condiții clare și transparente pentru activarea beneficiilor."
       },
       {
         "icon": "👥",
         "title": "COMUNITATE ACTIVĂ",
-        "description": "Fii parte dintr-o comunitate unde TIM activează reduceri reale la produse și servicii."
+        "description": "O comunitate în care accesul la beneficii se construiește prin colaborare."
       }
     ]
   },
@@ -132,31 +132,31 @@
     "faqs": [
       {
         "question": "Ce sunt punctele TIM?",
-        "answer": "Puncte de fidelizare digitale create de Temporo, folosite exclusiv pentru a obține discount-uri la produse și servicii din ecosistemul Temporo."
+        "answer": "TIM sunt puncte de fidelizare digitale create de Temporo, utilizabile exclusiv pentru activarea reducerilor la produse și servicii oferite de partenerii oficiali ai ecosistemului Temporo."
       },
       {
-        "question": "Cât valorează un punct de fidelizare TIM?",
-        "answer": "În afara ecosistemului Temporo, punctele TIM valorează 0 €. În ecosistem, fiecare TIM îți oferă dreptul de a activa o reducere de 1 € la produsele și serviciile eligibile, conform regulilor interne stabilite de fiecare partener."
+        "question": "Cât valorează un punct TIM?",
+        "answer": "În afara ecosistemului Temporo, TIM nu au nicio valoare (0 €).  În interiorul ecosistemului, fiecare TIM permite activarea unei reduceri de până la 1 €, conform regulilor stabilite de fiecare partener oficial."
       },
       {
-        "question": "Cum folosesc TIM pentru discount-uri?",
-        "answer": "Înainte de achiziție, anunți vânzătorul partener că vrei să folosești discount-ul Temporo. Vânzătorul îți spune ce procent sau sumă fixă acceptă pentru produs/serviciu sau pentru întreaga achiziție. Tu aplici punctele TIM din wallet, iar restul se plătește cu FIAT (€ / $ / RON etc)."
+        "question": "Cum folosesc TIM pentru a obține o reducere?",
+        "answer": "Înainte de achiziție, informezi partenerul oficial că dorești să activezi reducerea Temporo.  Partenerul îți comunică procentul sau valoarea maximă a reducerii aplicabile prin TIM. TIM sunt utilizați pentru activarea reducerii, iar suma rămasă se plătește în valută FIAT."
       },
       {
-        "question": "Am nevoie de o aplicație specială pentru TIM?",
-        "answer": "Da. TIM se stochează în wallet-ul xPortal, disponibil gratuit pentru iOS și Android. Dacă nu o ai instalată, descarcă-o acum apăsând pe icon-ul corespunzător de mai jos (App Store sau Google Play)."
+        "question": "Am nevoie de o aplicație specială?",
+        "answer": "Da. TIM sunt păstrați în wallet-ul xPortal, disponibil gratuit pentru iOS și Android."
       },
       {
-        "question": "Transferul punctelor TIM este gratuit?",
-        "answer": "Nu complet, dar costul este aproape zero. Ecosistemul Temporo folosește blockchainul MultiversX, unde punctele TIM sunt tokeni ESDT. Pentru a trimite TIM către alt wallet există un \"gas fee\" plătit în EGLD. Valoarea este simbolică – de obicei sub un cent – și garantează securitatea și rapiditatea tranzacției."
+        "question": "Transferul TIM este gratuit?",
+        "answer": "Nu complet. Există o taxă tehnică de rețea („gas fee”), externă Temporo, plătită în EGLD și de valoare foarte mică."
       },
       {
-        "question": "Cât durează până primesc TIM în wallet?",
-        "answer": "De obicei câteva minute, dar pot apărea întârzieri tehnice. În maximum 24 de ore de la confirmarea plății, punctele apar în walletul tău Xportal, pe care ni l-ai furnizat."
+        "question": "În cât timp primesc TIM după achiziție?",
+        "answer": "De regulă, în câteva minute. În cazuri excepționale, maxim 24 de ore de la confirmarea plății."
       },
       {
-        "question": "Pot combina discount-ul Temporo cu alte promoții?",
-        "answer": "Nu. Discount-ul Temporo nu se cumulează cu alte reduceri sau oferte, cu excepția cazului în care vânzătorul decide altfel."
+        "question": "Pot combina reducerea Temporo cu alte promoții?",
+        "answer": "Nu. Reducerea Temporo nu este cumulabilă, cu excepția cazului în care partenerul oficial decide altfel."
       },
       {
         "question": "Unde văd lista partenerilor oficiali Temporo?",
@@ -165,26 +165,26 @@
     ]
   },
   "calculator": {
-    "title": "CALCULATOR INTERACTIV",
-    "subtitle": "Simulează valoarea punctelor TIM și vezi instant cât economisești.",
-    "disclaimer": "Calculatorul are scop pur interactiv și pot exista erori de calcul. Te rugăm să verifici datele importante.",
-    "currencyLabel": "Alege moneda:",
-    "currencyOptionEur": "EUR (1 TIM = 1€)",
-    "currencyOptionRon": "RON (1 TIM = 5 RON)",
-    "productPriceLabel": "Preț produs/serviciu:",
+    "title": "Simulator de Beneficiu",
+    "subtitle": "Simulează reducerea activabilă cu punctele TIM.",
+    "disclaimer": "Instrument cu scop informativ: rezultatele pot conține imprecizii. Verifică întotdeauna datele importante. Euro (sau altă valută) este utilizat exclusiv ca unitate de măsură a beneficiului de reducere și nu reprezintă valoarea TIM.",
+    "currencyLabel": "Alege unitatea de referință:",
+    "currencyOptionEur": "EUR",
+    "currencyOptionRon": "RON",
+    "productPriceLabel": "Preț de listă produs/serviciu:",
     "productPricePlaceholder": "ex: 100",
     "maxPercentLabel": "Procent maxim acceptat:",
     "maxPercentPlaceholder": "ex: 50",
     "maxAmountLabel": "Limită maximă acceptată:",
     "maxAmountPlaceholder": "ex: 30",
-    "pointsUsedLabel": "Puncte utilizate:",
-    "amountToPayLabel": "Sumă de plătit:",
+    "pointsUsedLabel": "TIM utilizați pentru activarea reducerii:",
+    "amountToPayLabel": "Sumă rămasă de plată în valută:",
     "resetButton": "Reset"
   },
   "joinSection": {
-    "title": "Alătură-te Temporo și construiește-ți viitorul!",
-    "description": "Începe acum cu primul tău pachet Temporo și folosește TIM pentru discount-uri reale. Fă parte dintr-un ecosistem exclusiv care îți oferă acces la beneficii unice.",
-    "cta": "Cumpără TIM"
+    "title": "Descoperă Temporo",
+    "description": "Activează primul tău pachet și accesează ecosistemul.  Punctele TIM incluse în serviciu îți oferă acces la beneficii și, în condițiile stabilite de partenerii oficiali, posibilitatea de a activa reduceri.",
+    "cta": "Activează ecosistemul"
   },
   "seo": {
     "title": "Temporo - Ecosistemul de fidelizare 2.0 cu puncte TIM",

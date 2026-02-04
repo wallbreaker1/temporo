@@ -89,7 +89,7 @@ export default function Calculator({
     const requiredPoints = discountValue / timValue;
     const fiatAmount = price - discountValue;
 
-    setPointsUsed(requiredPoints);
+    setPointsUsed(Math.ceil(requiredPoints)); // Rotunjire în sus pentru punctele necesare
     setAmountToPay(fiatAmount);
   };
 

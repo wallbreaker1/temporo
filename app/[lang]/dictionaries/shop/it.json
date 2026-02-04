@@ -1,22 +1,42 @@
 {
   "subtitle": "SCEGLI IL PACCHETTO CHE FA PER TE",
-  "title": "Ricevi punti TIM che puoi utilizzare per sconti su prodotti e servizi dell'ecosistema Temporo.",
+  "title": "I punti TIM sono punti di fidelizzazione inclusi nel servizio, che offrono accesso a benefici e alla possibilità di attivare sconti nell’ecosistema Temporo.",
   "buyButton": "Acquista ora",
   "processingButton": "Elaborazione...",
   "popularBadge": "POPOLARE",
-  "footerNote": "I prezzi dei pacchetti non includono l'IVA. Lo sconto Temporo non è cumulabile con altre riduzioni o promozioni, eccetto quando le vibrazioni decidono diversamente.",
+  "footerNote": "Per ricevere i punti TIM è necessario un wallet MultiversX. I TIM rappresentano un beneficio di potenziale sconto futuro, attivabile esclusivamente se e nei limiti stabiliti dai partner ufficiali. L’IVA è applicata secondo il paese di residenza.",
   "packages": {
     "iron": {
       "name": "Pacchetto Iron",
-      "description": "I 30 TIM ti offrono sconti fino a 30 € sufficienti per scoprire come funziona l'ecosistema."
+      "price": "10 € (iva inclusa)",
+      "benefitTitle": "Benefici inclusi:",
+      "benefitText": [
+        "Accesso all’ecosistema Temporo",
+        "30 TIM (benefici di sconto attivabili)"
+      ],
+      "description": ""
     },
     "silver": {
       "name": "Pacchetto Silver",
-      "description": "Ricevi 200 TIM, con i quali attivi sconti fino a 200 €. Perfetto per utenti consapevoli che vogliono risparmiare su ogni acquisto."
+      "price": "50 € (iva inclusa)",
+      "benefitTitle": "Benefici inclusi:",
+      "benefitText": [
+        "Accesso all’ecosistema Temporo",
+        "150 TIM (benefici di sconto attivabili)",
+        "Bonus : 50 TIM (benefici di sconto attivabili)"
+      ],
+      "description": ""
     },
     "gold": {
       "name": "Pacchetto Gold",
-      "description": "Ricevi 850 TIM, l'equivalente di sconti fino a 850 €. Ideale per chi vuole sfruttare al massimo l'ecosistema Temporo."
+      "price": "250 € (iva inclusa)",
+      "benefitTitle": "Benefici inclusi:",
+      "benefitText": [
+        "Accesso all’ecosistema Temporo",
+        "750 TIM (benefici di sconto attivabili)",
+        "Bonus : 100 TIM (benefici di sconto attivabili)"
+      ],
+      "description": ""
     }
   }
 }
