@@ -17,7 +17,7 @@ export default function HeroSection({
 }: HeroSectionProps) {
   return (
     <section className="py-10 lg:py-12">
-      <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         {/* Text Content */}
         <div className="space-y-6">
           <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight">

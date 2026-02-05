@@ -4,8 +4,8 @@
     "description": "Solutii digitale simple si rapide pentru proiectul tau."
   },
   "heroSection": {
-    "title": "Ecosistemul revoluționar de fidelizare 2.0 Acces la avantaje reale, activabile prin punctele TIM ",
-    "subtitle": "Un mod nou și simplu de a obține discount-uri de până la 90% la produse și servicii în ecosistemul Temporo",
+    "title": "Ecosistemul revoluționar de fidelizare 2.0 ",
+    "subtitle": "Acces la avantaje reale, activabile prin punctele TIM",
     "description": "Pentru oamenii și afacerile care vor mai mult.",
     "imageSrc": "/hero-globe.png",
     "imageAlt": "Rețeaua Globală Temporo"
@@ -117,7 +117,7 @@
       },
       {
         "index": "04",
-        "title": "Activează reducerile",
+        "title": "Activează accesul și avantajele",
         "description": "Anunță partenerul înainte de achiziție, folosește punctele TIM pentru discount și plătește diferența în RON."
       },
       {
@@ -132,11 +132,11 @@
     "faqs": [
       {
         "question": "Ce sunt punctele TIM?",
-        "answer": "TIM sunt puncte de fidelizare digitale create de Temporo, utilizabile exclusiv pentru activarea reducerilor la produse și servicii oferite de partenerii oficiali ai ecosistemului Temporo."
+        "answer": "TIM sunt puncte de fidelizare digitale create de Temporo, incluse într-un serviciu de acces la ecosistem. Ele permit accesul la beneficii și, în condițiile stabilite de partenerii oficiali, activarea de reduceri la produse și servicii."
       },
       {
         "question": "Cât valorează un punct TIM?",
-        "answer": "În afara ecosistemului Temporo, TIM nu au nicio valoare (0 €).  În interiorul ecosistemului, fiecare TIM permite activarea unei reduceri de până la 1 €, conform regulilor stabilite de fiecare partener oficial."
+        "answer": "În afara ecosistemului Temporo, punctele TIM nu au nicio valoare (0 €). În interiorul ecosistemului, TIM permit accesul la beneficii și, conform regulilor stabilite de partenerii oficiali, activarea unor reduceri potențiale de până la 1 €."
       },
       {
         "question": "Cum folosesc TIM pentru a obține o reducere?",

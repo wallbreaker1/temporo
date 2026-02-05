@@ -4,8 +4,8 @@
     "description": "Soluzioni digitali semplici e veloci per il tuo progetto."
   },
   "heroSection": {
-    "title": "Ecosistema di fidelizzazione 2.0   accesso a sconti reali tramite i punti TIM",
-    "subtitle": "Un modo nuovo e semplice per ottenere sconti fino al 90% su prodotti e servizi nell'ecosistema Temporo",
+    "title": "Ecosistema di fidelizzazione 2.0",
+    "subtitle": "Accesso e sconti reali tramite i punti TIM",
     "description": "Per le persone e le aziende che vogliono di più.",
     "imageSrc": "/hero-globe.png",
     "imageAlt": "Rete Globale Temporo"
@@ -116,8 +116,8 @@
       },
       {
         "index": "04",
-        "title": "Attiva le riduzioni",
-        "description": "Avvisa il partner prima dell'acquisto, usa i punti TIM per lo sconto e paga la differenza in RON."
+        "title": "Attiva accesso e sconti",
+        "description": "Avvisa il partner prima dell'acquisto, usa i punti TIM per lo sconto e paga la differenza in Euro."
       },
       {
         "index": "05",
@@ -131,11 +131,11 @@
     "faqs": [
       {
         "question": "Cosa sono i punti TIM?",
-        "answer": "I TIM sono punti di fidelizzazione digitali creati da Temporo, utilizzabili esclusivamente per attivare sconti su prodotti e servizi offerti dai partner aderenti all’ecosistema Temporo."
+        "answer": "I TIM sono punti di fidelizzazione digitali creati da Temporo, inclusi in un servizio di accesso all’ecosistema. Permettono di accedere a benefici e, secondo le condizioni dei partner aderenti, di attivare sconti su prodotti e servizi."
       },
       {
         "question": "Quanto vale un punto TIM?",
-        "answer": "Al di fuori dell’ecosistema Temporo, i punti TIM non hanno alcun valore (0 €). All’interno dell’ecosistema, ogni TIM dà diritto ad attivare uno sconto fino a 1 €, secondo le regole  stabilite autonomamente da ciascun partner ufficiale."
+        "answer": "Al di fuori dell’ecosistema Temporo, i punti TIM non hanno alcun valore (0 €). All’interno dell’ecosistema, i TIM permettono di accedere a benefici e, secondo le regole stabilite dai partner ufficiali, di attivare sconti potenziali fino a 1 €."
       },
       {
         "question": "Come utilizzo i TIM per ottenere uno sconto?",
