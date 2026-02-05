@@ -268,7 +268,7 @@ export default function Calculator({
                   {pointsUsedLabel}
                 </span>
                 <span className="text-[#D2A55D] font-bold group-hover:text-[#E6B96A] transition-colors duration-300">
-                  {pointsUsed.toFixed(2)} TIM
+                  {pointsUsed} TIM
                 </span>
               </div>
               <div className="flex justify-between items-center">
