@@ -209,11 +209,13 @@ export default function TimPackages({
                     </ul>
                   </div>
                 </div>
-                {/* Purchase Button */}
+
+                {/* Purchase Button onClick={() => handlePurchase(pkg.id)}*/}
+
+                {/* ACTIUNEA ON CLick mutata sus clasa cursor-not-allowed adaugata in className */}
                 <button
-                  onClick={() => handlePurchase(pkg.id)}
                   disabled={selectedPackage === pkg.id}
-                  className={`mt-auto w-full py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105 mb-6 ${
+                  className={`mt-auto cursor-not-allowed w-full py-3 px-6 rounded-lg font-semibold text-sm transition-all duration-300 hover:scale-105 mb-6 ${
                     selectedPackage === pkg.id
                       ? "bg-gray-600 text-gray-400 cursor-not-allowed"
                       : "bg-[#D2A55D] text-black hover:bg-[#E6B96A] shadow-lg"
