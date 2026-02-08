@@ -20,7 +20,7 @@ export default function HeroSection({
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         {/* Text Content */}
         <div className="space-y-6">
-          <h1 className="text-2xl lg:text-3xl xl:text-4xl font-bold text-white leading-tight">
+          <h1 className="text-3xl lg:text-4xl xl:text-5xl font-bold text-white leading-tight whitespace-nowrap">
             {title}
           </h1>
 
