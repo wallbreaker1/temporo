@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 
@@ -101,7 +103,7 @@ export default function Footer({
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link
+                <a
                   href={`/documents/${currentLang}/legal-${currentLang}/${
                     currentLang === "it"
                       ? "Termini%20e%20condizioni.pdf"
@@ -110,14 +112,35 @@ export default function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                  onClick={(e) => {
+                    // Pe mobil, încearcă să deschidă PDF-ul inline
+                    if (
+                      typeof window !== "undefined" &&
+                      window.innerWidth < 768
+                    ) {
+                      console.log("Mobile detected, opening PDF optimized");
+                      e.preventDefault();
+                      const pdfUrl = `/documents/${currentLang}/legal-${currentLang}/${
+                        currentLang === "it"
+                          ? "Termini%20e%20condizioni.pdf"
+                          : "Termeni%20și%20Condiții.pdf"
+                      }`;
+                      window.open(
+                        pdfUrl + "#toolbar=1&navpanes=1&scrollbar=1&view=FitH",
+                        "_blank",
+                      );
+                    } else {
+                      console.log("Desktop detected, normal PDF opening");
+                    }
+                  }}
                 >
                   {currentLang === "it"
                     ? "Termini e Condizioni"
                     : "Termeni și Condiții"}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/documents/${currentLang}/legal-${currentLang}/${
                     currentLang === "it"
                       ? "Politica%20sulla%20privacy.pdf"
@@ -126,14 +149,31 @@ export default function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                  onClick={(e) => {
+                    if (
+                      typeof window !== "undefined" &&
+                      window.innerWidth < 768
+                    ) {
+                      e.preventDefault();
+                      const pdfUrl = `/documents/${currentLang}/legal-${currentLang}/${
+                        currentLang === "it"
+                          ? "Politica%20sulla%20privacy.pdf"
+                          : "Politica%20de%20Confidențialitate.pdf"
+                      }`;
+                      window.open(
+                        pdfUrl + "#toolbar=1&navpanes=1&scrollbar=1&view=FitH",
+                        "_blank",
+                      );
+                    }
+                  }}
                 >
                   {currentLang === "it"
                     ? "Politica sulla Privacy"
                     : "Politica de Confidențialitate"}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/documents/${currentLang}/legal-${currentLang}/${
                     currentLang === "it"
                       ? "Disclaimer%20Ufficiale%20TIM.pdf"
@@ -142,14 +182,31 @@ export default function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                  onClick={(e) => {
+                    if (
+                      typeof window !== "undefined" &&
+                      window.innerWidth < 768
+                    ) {
+                      e.preventDefault();
+                      const pdfUrl = `/documents/${currentLang}/legal-${currentLang}/${
+                        currentLang === "it"
+                          ? "Disclaimer%20Ufficiale%20TIM.pdf"
+                          : "Disclaimer%20Oficial%20%20Puncte%20de%20Fidelitate%20TIM.pdf"
+                      }`;
+                      window.open(
+                        pdfUrl + "#toolbar=1&navpanes=1&scrollbar=1&view=FitH",
+                        "_blank",
+                      );
+                    }
+                  }}
                 >
                   {currentLang === "it"
                     ? "Disclaimer Ufficiale TIM"
                     : "Disclaimer Oficial TIM"}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
+                <a
                   href={`/documents/${currentLang}/legal-${currentLang}/${
                     currentLang === "it"
                       ? "Disclaimer%20di%20Responsabilità.pdf"
@@ -158,11 +215,28 @@ export default function Footer({
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-gray-400 hover:text-[#D2A55D] transition-colors"
+                  onClick={(e) => {
+                    if (
+                      typeof window !== "undefined" &&
+                      window.innerWidth < 768
+                    ) {
+                      e.preventDefault();
+                      const pdfUrl = `/documents/${currentLang}/legal-${currentLang}/${
+                        currentLang === "it"
+                          ? "Disclaimer%20di%20Responsabilità.pdf"
+                          : "Disclaimer%20oficial%20Temporo.pdf"
+                      }`;
+                      window.open(
+                        pdfUrl + "#toolbar=1&navpanes=1&scrollbar=1&view=FitH",
+                        "_blank",
+                      );
+                    }
+                  }}
                 >
                   {currentLang === "it"
                     ? "Disclaimer di Responsabilità"
                     : "Disclaimer Oficial Temporo"}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
