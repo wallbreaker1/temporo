@@ -33,28 +33,32 @@ export default async function Page({
 
   return (
     <main>
-      <HeroSection
-        title={dict.heroSection.title}
-        subtitle={dict.heroSection.subtitle}
-        description={dict.heroSection.description}
-        imageSrc={dict.heroSection.imageSrc || "/hero-globe.png"}
-        imageAlt={dict.heroSection.imageAlt || "Temporo Global Network"}
-      />
+      <div className="max-w-6xl mx-auto px-4">
+        <HeroSection
+          title={dict.heroSection.title}
+          subtitle={dict.heroSection.subtitle}
+          description={dict.heroSection.description}
+          imageSrc={dict.heroSection.imageSrc || "/hero-globe.png"}
+          imageAlt={dict.heroSection.imageAlt || "Temporo Global Network"}
+        />
+      </div>
 
-      <ColumnWithImage
-        subtitle={dict.aboutSection.subtitle}
-        title={dict.aboutSection.title}
-        description={dict.aboutSection.description}
-        contentBlocks={[
-          { description: dict.aboutSection.timPoints.description },
-          { description: dict.aboutSection.timControl.description },
-          { description: dict.aboutSection.mission.description },
-          { description: dict.aboutSection.mission.benefits, highlight: true },
-        ]}
-        imageSrc={dict.aboutSection.imageSrc || "/about-saturn.png"}
-        imageAlt={dict.aboutSection.imageAlt || "Ecosistemul Temporo"}
-        currentLang={lang as "it" | "ro"}
-      />
+      <div className="max-w-6xl mx-auto px-4">
+        <ColumnWithImage
+          subtitle={dict.aboutSection.subtitle}
+          title={dict.aboutSection.title}
+          description={dict.aboutSection.description}
+          contentBlocks={[
+            { description: dict.aboutSection.timPoints.description },
+            { description: dict.aboutSection.timControl.description },
+            { description: dict.aboutSection.mission.description },
+            { description: dict.aboutSection.mission.benefits, highlight: true },
+          ]}
+          imageSrc={dict.aboutSection.imageSrc || "/about-saturn.png"}
+          imageAlt={dict.aboutSection.imageAlt || "Ecosistemul Temporo"}
+          currentLang={lang as "it" | "ro"}
+        />
+      </div>
 
       <WhyChooseTim
         title={dict.whyChooseTim.title}
@@ -62,11 +66,13 @@ export default async function Page({
         features={dict.whyChooseTim.features}
       />
 
-      <TimPointsInfo
-        title={dict.timPointsInfo.title}
-        whatArePoints={dict.timPointsInfo.whatArePoints}
-        whatAreNotPoints={dict.timPointsInfo.whatAreNotPoints}
-      />
+      <div className="max-w-6xl mx-auto px-4">
+        <TimPointsInfo
+          title={dict.timPointsInfo.title}
+          whatArePoints={dict.timPointsInfo.whatArePoints}
+          whatAreNotPoints={dict.timPointsInfo.whatAreNotPoints}
+        />
+      </div>
 
       <HowItWorks
         title={dict.howItWorks.title}
@@ -93,19 +99,23 @@ export default async function Page({
         resetButton={dict.calculator.resetButton}
       />
 
-      <FAQ title={dict.faq.title} faqs={dict.faq.faqs} />
+      <div className="max-w-4xl mx-auto px-4">
+        <FAQ title={dict.faq.title} faqs={dict.faq.faqs} />
+      </div>
 
-      <ColumnWithImage
-        title={dict.joinSection.title}
-        description={dict.joinSection.description}
-        imageSrc="/map.png"
-        imageAlt="Temporo Global Network"
-        cta={{
-          text: dict.joinSection.cta,
-          href: `/${lang}/buy-tim`,
-        }}
-        currentLang={lang as "it" | "ro"}
-      />
+      <div className="max-w-6xl mx-auto px-4">
+        <ColumnWithImage
+          title={dict.joinSection.title}
+          description={dict.joinSection.description}
+          imageSrc="/map.png"
+          imageAlt="Temporo Global Network"
+          cta={{
+            text: dict.joinSection.cta,
+            href: `/${lang}/buy-tim`,
+          }}
+          currentLang={lang as "it" | "ro"}
+        />
+      </div>
     </main>
   );
 }
